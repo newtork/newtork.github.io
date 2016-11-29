@@ -14,10 +14,12 @@ body:before {
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 1;
+	z-index: -1;
 }
 
 .site-header {
     height: 210px;
+	cursor: pointer;
 }
 
 .site-header .wrapper .site-title {
