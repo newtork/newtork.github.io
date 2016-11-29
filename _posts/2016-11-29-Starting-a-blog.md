@@ -11,10 +11,11 @@ redirect_from:
 categories: meta blog
 ---
 
-[fish][fishi0x01] encouraged me to start a developer blog. Thanks to him, I shall now be able to write down some thoughts, difficulties I face during developing and their solutions.
+[fishi0x01][fish] encouraged me to start a developer blog. Thanks to him, I shall now be able to write down some thoughts, difficulties I face during development and their solutions.
 
+<!--more-->
 
-### Jekyll ###
+### Jekyll and GitHub ###
 The blog is powered by [jekyll][Jekyll] and [github][Github].
 
 ```
