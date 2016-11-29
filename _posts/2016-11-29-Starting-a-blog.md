@@ -12,7 +12,7 @@ categories: meta blog
 excerpt_separator: <!--more-->
 ---
 
-[fishi0x01][fish] encouraged me to start a developer blog. Thanks to him, I shall now be able to write down some thoughts, difficulties I face during development and their solutions.
+[fishi0x01][fish] encouraged me to start a developer blog. Thanks to him, I shall now be able to write down some thoughts, show difficulties I face during development and explain their solutions.
 
 <!--more-->
 

@@ -6,13 +6,17 @@ description: >
 
 baseurl: "" 
 url: "http://blog.newtork.de" 
+headline: "Newt<small>|</small>ork"
+
+# style
+custom_css: "newtork.css"
 
 # Media
-github_username:  newtork
+github_username: newtork
 
 # comments
-isso_tld: //comments.newtork.de/
-isso_src: //comments.newtork.de/js/embed.min.js
+isso_tld: "//comments.newtork.de/"
+isso_src: "//comments.newtork.de/js/embed.min.js"
 
 # Build settings
 markdown: kramdown
