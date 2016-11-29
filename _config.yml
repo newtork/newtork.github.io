@@ -11,8 +11,8 @@ url: "http://blog.newtork.de"
 github_username:  newtork
 
 # comments
-isso.tld: //comments.newtork.de/
-isso.src: //comments.newtork.de/js/embed.min.js
+isso_tld: //comments.newtork.de/
+isso_src: //comments.newtork.de/js/embed.min.js
 
 # Build settings
 markdown: kramdown
