@@ -46,6 +46,6 @@ body {
 #isso-thread > h4:first-letter {
     text-transform: capitalize;
 }
-#isso-thread .authg-section .input-wrapper {
+#isso-thread .auth-section .input-wrapper {
     padding: 0.2em 0.3em;
 }
