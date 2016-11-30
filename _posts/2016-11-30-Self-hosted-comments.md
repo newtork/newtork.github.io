@@ -46,7 +46,7 @@ To the date of my installation of *isso 0.10.6*, it was **not** possible to log 
 To the date of my installation of *isso 0.10.6*, it would return HTTP **404** when looking for posts in a thread and none has been made yet.
 {% include tags/hint-end.html %}
 
-Although these are some serious flaws, yet I'm happy to have it running on my infrastructure on my terms and configuration. As my website is currently running on [Apache][apache], I used *VirtualHost* configurations like the ones below:
+Although these are some serious flaws, yet I'm happy to have it running on my infrastructure on my terms and settings. As my website is currently running on [Apache][apache], I used *VirtualHost* configurations like the ones below:
 
 ```
 <VirtualHost *:80>
@@ -80,7 +80,7 @@ Although these are some serious flaws, yet I'm happy to have it running on my in
 </VirtualHost>
 ```
 
-By default, accessing the comments is happening with SSL. This is obviously for privacy reasons.
+By default, accessing the comments is happening with SSL. This is obviously for user privacy reasons.
 
 [disqus]: https://disqus.com/
 [muut]: https://muut.com
