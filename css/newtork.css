@@ -28,3 +28,24 @@ body {
 .page-content {
 	position:relative;
 }
+
+/*
+ * comments
+ */
+ 
+#isso-thread:before {
+    content: "";
+    border-top: 1px solid #e8e8e8;
+    width: 100%;
+    display: block;
+    margin: 1em 0;
+}
+#isso-thread > h4 {
+    text-transform: lowercase;
+}
+#isso-thread > h4:first-letter {
+    text-transform: capitalize;
+}
+#isso-thread .authg-section .input-wrapper {
+    padding: 0.2em 0.3em;
+}
