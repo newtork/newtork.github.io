@@ -20,7 +20,7 @@ Communication on a blog doesn't inevitably have to be unidirectional. More than 
 Other competitors in the segment are [Muut][muut], [Adobe Livefyre][livefyre] and [Jetpack for WordPress][jetpack].
 
 
-### Isso ###
+### [Isso][isso] ###
 
 "Isso" is an acronym on the old German saying: *Ich schrei' sonst* / *Otherwise, I scream*. The software is used to establish comments on websites otherwise being without any interactivity. On a dedicated, self-hosted web server you can manage all user comments by yourself.
 
@@ -87,3 +87,4 @@ By default, accessing the comments is happening with SSL. This is obviously for 
 [livefyre]: http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html
 [jetpack]: https://jetpack.com/
 [apache]: https://httpd.apache.org/
+[isso]: https://posativ.org/isso/
