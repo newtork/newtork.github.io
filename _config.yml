@@ -15,8 +15,8 @@ custom_css: "newtork.css"
 github_username: newtork
 
 # comments
-isso_tld: "//comments.newtork.de/"
-isso_src: "//comments.newtork.de/js/embed.min.js"
+isso_tld: "https://comments.newtork.de/"
+isso_src: "https://comments.newtork.de/js/embed.min.js"
 
 # Build settings
 markdown: kramdown
