@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Self-hosted comments"
+title:  "Self-hosted comments with Isso"
 date:   2016-11-30 08:00:00 +0000
 modified: 2016-11-30 08:00:00 +0000 
 comments: true
-permalink: /weblog/2016/11/30/self-hosted-comments/
+permalink: /weblog/2016/11/30/self-hosted-comments-with-isso/
 categories: meta blog server
 excerpt_separator: <!--more-->
 ---
 
-Communication on a blog doesn't inevitably have to be unidirectional. More than once I found solutions to my tech problems in the comments section of a related thread, thanks to popular search engines. Having a static website usually means embedding a third-party commenting service, most often [Disqus][disqus]. But there is an alternative!
+Communication on a blog doesn't inevitably have to be unidirectional. More than once I found solutions to my tech problems in the comments section of a related thread, thanks to popular search engines. Having a static website usually means embedding a third-party commenting service, most often [Disqus][disqus]. But there is an alternative: [Isso][isso].
 
 <!--more-->
 
@@ -22,7 +22,7 @@ Other competitors in the segment are [Muut][muut], [Adobe Livefyre][livefyre] an
 
 ### [Isso][isso] ###
 
-"Isso" is an acronym on the old German saying: *Ich schrei' sonst* / *Otherwise, I scream*. The software is used to establish comments on websites otherwise being without any interactivity. On a dedicated, self-hosted web server you can manage all user comments by yourself.
+"Isso" is an acronym for the German saying: *Ich schrei' sonst* / *Otherwise, I scream*. The software is used to establish comments on websites otherwise being without any interactivity. On a dedicated, self-hosted web server you can manage all user comments by yourself.
 
  - **Python** is required. The data is saved to **SQLite**.
  - Easy installation, though with pitfalls.
@@ -80,7 +80,7 @@ Although these are some serious flaws, yet I'm happy to have it running on my in
 </VirtualHost>
 ```
 
-By default, accessing the comments is happening with SSL. This is obviously for user privacy reasons.
+By default, accessing the comments is happening with SSL. This is obviously for user privacy reasons. If you are interested, please take a look into the Isso [Homepage][isso] and [GitHub][issogit].
 
 [disqus]: https://disqus.com/
 [muut]: https://muut.com
@@ -88,3 +88,4 @@ By default, accessing the comments is happening with SSL. This is obviously for 
 [jetpack]: https://jetpack.com/
 [apache]: https://httpd.apache.org/
 [isso]: https://posativ.org/isso/
+[issogit]: https://github.com/posativ/isso
