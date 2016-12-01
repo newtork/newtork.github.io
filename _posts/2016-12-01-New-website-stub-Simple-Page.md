@@ -15,7 +15,7 @@ Taken from a little side project for a client who just wanted a simple website w
 
 First of all, feel free to look into the [demo][demo].
 
-###Features:###
+### Features ###
 
  - static website for simple, multiple pages
  - no JavaScript, no reloading assets, no cookies, no dynamics
@@ -29,7 +29,7 @@ And when using PHP:
  - *i18n* - see the "/languages" directory
 
 {% include tags/hint-start.html %}
-If you are interested in the static page file, please just use the save feature of your browser.
+If you are interested in the static page file, please just use the *save* feature of your browser.
 {% include tags/hint-end.html %}
 
 To keep things simple, I didn't implement nested templates or any logic, like iterations. That way the whole HTML template could fit into one file and the template engine stays rudimentary. Furthermore I wanted to avoid email interaction, for now. That's why logging to a text file should be a good enough start.
