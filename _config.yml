@@ -6,7 +6,7 @@ description: >
 
 baseurl: "" 
 url: "http://blog.newtork.de" 
-headline: "Newt̸ork"
+headline: "Newtork"
 
 # style
 custom_css: "newtork.css"
