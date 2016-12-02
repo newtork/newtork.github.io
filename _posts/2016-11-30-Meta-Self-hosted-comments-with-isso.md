@@ -34,17 +34,28 @@ Other competitors in the segment are [Muut][muut], [Adobe Livefyre][livefyre] an
  
 Unfortunately *isso* is not logging posts and user interactions to its logfile and some of its incomprehensible actions during setup and runtime are "expected behaviour". Even editing or deleting older posts means trouble.
 
+I'd like to note the following for my installation of *isso 0.10.6*...
+
 {% include tags/hint-start.html %}
-To the date of my installation of *isso 0.10.6*, it was **not** possible to declare custom thread ids, e.g. an incrementing identifier. Instead, *isso* uses the URL pathname of the thread as URI. It has to be publicly accessible by **[HOST] + URI**. If *isso* is unable to reach this public URL, it will not carry on.
+It is **not** possible to declare custom thread ids, e.g. an incrementing identifier. Instead, *isso* uses the URL pathname of the thread as URI. It has to be publicly accessible by **[HOST] + URI**. If *isso* is unable to reach this public URL, it will not carry on.
 {% include tags/hint-end.html %}
 
 {% include tags/hint-start.html %}
-To the date of my installation of *isso 0.10.6*, it was **not** possible to log to *stdout*.
+It is **not** possible to log to *stdout*.
 {% include tags/hint-end.html %}
 
 {% include tags/hint-start.html %}
-To the date of my installation of *isso 0.10.6*, it would return HTTP **404** when looking for posts in a thread and none has been made yet.
+*Isso* will return HTTP **404** when looking for posts in a thread and none has been made yet.
 {% include tags/hint-end.html %}
+
+
+And only by coincidence I stumbled upon the */var/log/syslog* entry:
+```gunicorn[861]: OperationalError: attempt to write a readonly database```
+
+{% include tags/hint-start.html %}
+If you receive **404** for any thread, but the *embed.js* still working, you should check the access to the *isso* database file. It must be readable and writeable to your *isso* user.
+{% include tags/hint-end.html %}
+
 
 Although these are some serious flaws, yet I'm happy to have it running on my infrastructure on my terms and settings. As my website is currently running on [Apache][apache], I used *VirtualHost* configurations like the ones below:
 
