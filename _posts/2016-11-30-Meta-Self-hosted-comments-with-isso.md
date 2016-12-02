@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Self-hosted comments with Isso"
+title:  "Meta: Self-hosted comments with Isso"
 date:   2016-11-30 08:00:00 +0000
 modified: 2016-11-30 08:00:00 +0000 
 comments: true

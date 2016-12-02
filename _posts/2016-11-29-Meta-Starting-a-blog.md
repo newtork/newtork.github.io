@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Starting a blog"
+title:  "Meta: Starting a blog"
 date:   2016-11-29 08:00:00 +0000
 modified: 2016-11-29 08:00:00 +0000 
 comments: true
