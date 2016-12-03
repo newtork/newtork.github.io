@@ -65,14 +65,15 @@ The last time I touched the project, was to compose a [Wiki documentation][wiki]
 	pg_restore -U postgres -d spatial_election spatial_db.backup
 	Password: postgres
 	```
-	{% include tags/hint-start.html %}
+	
 	You may encounter an error message during the restore procedure. You can ignore it:
 	
-	```pg_restore: [archiver (db)] could not execute query: ERROR:  schema "topology" already exists
+	```
+	pg_restore: [archiver (db)] could not execute query: ERROR:  schema "topology" already exists
 	Command was: CREATE SCHEMA topology;
+	WARNING: errors ignored on restore: 1
+	```
 	
-	WARNING: errors ignored on restore: 1```
-	{% include tags/hint-end.html %}
 
 
 {% include tags/hint-start.html %}
