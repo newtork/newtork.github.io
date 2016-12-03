@@ -31,53 +31,53 @@ The last time I touched the project, was to compose a [Wiki documentation][wiki]
 ### Extended database installation instructions ###
 
 1. Download and install dependencies.
+	
+	```
+	apt-get update
+	apt-get install postgis
+	```
+	
+1. Create database "spatial_election" with extensions "postgis" and "postgis_topology".
+	
+	```
+	createdb spatial_election --username=postgres --encoding=UNICODE
+	psql spatial_election -U postgres -c "CREATE EXTENSION postgis; CREATE EXTENSION postgis_topology;"
+	```
+	
+1. Set passsword for postgres.
+	
+	```
+	postgres:~$ psql -U postgres -c "\password"
+	Enter new password: postgres
+	Enter it again: postgres
+	```
+	
+1. Allow login via password, *md5* instead of *peer*.
+	
+	```
+	sed 's/^local\s*all\s*postgres\s*peer/local\tall\tpostgres\tmd5/' /etc/postgresql/9.*/main/pg_hba.conf
+	service postgresql restart
+	```
+	
+1. Restore database from the dump file, here *spatial_db.backup*.
+	
+	```
+	pg_restore -U postgres -d spatial_election spatial_db.backup
+	Password: postgres
+	```
+	{% include tags/hint-start.html %}
+	You may encounter an error message during the restore procedure. You can ignore it:
+	
+	```pg_restore: [archiver (db)] could not execute query: ERROR:  schema "topology" already exists```
+	
+	```Command was: CREATE SCHEMA topology;```
+	
+	```WARNING: errors ignored on restore: 1```
+	{% include tags/hint-end.html %}
 
-```
-apt-get update
-apt-get install postgis
-```
 
-2. Create database "spatial_election" with extensions "postgis" and "postgis_topology".
-
-```
-createdb spatial_election --username=postgres --encoding=UNICODE
-psql spatial_election -U postgres -c "CREATE EXTENSION postgis; CREATE EXTENSION postgis_topology;"
-```
-
-3. Set passsword for postgres.
-
-```
-postgres:~$ psql -U postgres -c "\password"
-Enter new password: postgres
-Enter it again: postgres
-```
-
-4. Allow login via password, *md5* instead of *peer*.
-
-```
-sed 's/^local\s*all\s*postgres\s*peer/local\tall\tpostgres\tmd5/' /etc/postgresql/9.*/main/pg_hba.conf
-service postgresql restart
-```
-
-5. Restore database from the dump file, here *spatial_db.backup*.
-
-```
-pg_restore -U postgres -d spatial_election spatial_db.backup
-Password: postgres
-```
 {% include tags/hint-start.html %}
-You may encounter an error message during the restore procedure. You can ignore it:
-```
-[...]
-pg_restore: [archiver (db)] could not execute query: ERROR:  schema "topology" already exists
-Command was: CREATE SCHEMA topology;
-WARNING: errors ignored on restore: 1
-```
-{% include tags/hint-end.html %}
-
-
-{% include tags/hint-start.html %}
-Close *psql* sessions with **\q**
+Close *psql* sessions with ```\q```
 {% include tags/hint-end.html %}
 
 
@@ -87,3 +87,4 @@ Close *psql* sessions with **\q**
 [spatial]: https://github.com/a-d/spatial.election/
 [demo]: https://newtork.de/spatial.election/
 [wiki]: https://github.com/a-d/spatial.election/wiki
+[tomcat]: http://tomcat.apache.org/
