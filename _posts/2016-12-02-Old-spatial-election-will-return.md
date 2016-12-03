@@ -47,7 +47,7 @@ psql spatial_election -U postgres -c "CREATE EXTENSION postgis; CREATE EXTENSION
 3\. Set passsword for postgres.
 
 ```
-postgres:~$ psql -U postgres -c "\password"
+psql -U postgres -c "\password"
 Enter new password: postgres
 Enter it again: postgres
 ```
@@ -66,7 +66,7 @@ pg_restore -U postgres -d spatial_election spatial_db.backup
 Password: postgres
 ```
 
-You may encounter an error message during the restore procedure. You can ignore it:
+You may encounter an error message during the restore procedure. You can ignore this:
 
 ```
 pg_restore: [archiver (db)] could not execute query: ERROR:  schema "topology" already exists
