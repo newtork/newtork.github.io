@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Old: spatial.election will return in 2017"
-date:   2016-12-01 07:00:00 +0000
-modified: 2016-12-01 07:00:00 +0000 
+date:   2016-12-02 07:00:00 +0000
+modified: 2016-12-02 07:00:00 +0000 
 comments: true
-permalink: /weblog/2016/11/30/old-spatial-election-will-return/
+permalink: /weblog/2016/12/02/old-spatial-election-will-return/
 categories: project website java spacial
 ---
 
