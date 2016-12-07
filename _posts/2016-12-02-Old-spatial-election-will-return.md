@@ -5,7 +5,7 @@ date:   2016-12-02 07:00:00 +0000
 modified: 2016-12-02 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/02/old-spatial-election-will-return/
-categories: project website java spacial
+categories: project website java spatial
 ---
 
 In less than a year, there will be the next [elections for the Bundestag in Germany][election]. Again we will face interesting political outcomes and changing trends on the level of country, state and city, even district. Thanks to the wonders of the World Wide Web, we can acknowledge statistics to almost anything in high definition. In a little web project I did some years ago, I examined political, social and economical data of districts in Germany with regard to spatial properties and the results of the federal election in 2013: [spatial.election][spatial]
@@ -55,7 +55,7 @@ Enter it again: postgres
 4\. Allow login via password, *md5* instead of *peer*.
 
 ```
-sed 's/^local\s*all\s*postgres\s*peer/local\tall\tpostgres\tmd5/' /etc/postgresql/9.*/main/pg_hba.conf
+sed -i 's/^local\s*all\s*postgres\s*peer/local\tall\tpostgres\tmd5/' /etc/postgresql/9.*/main/pg_hba.conf
 service postgresql restart
 ```
 
