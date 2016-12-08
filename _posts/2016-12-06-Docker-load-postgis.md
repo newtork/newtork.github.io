@@ -8,7 +8,7 @@ permalink: /weblog/2016/12/06/docker-load-postgis/
 categories: project docker bash postgresql postgis database
 ---
 
-I'd like to introduce a little container I created, [load-postgis][load-postgis]. It loads PostgreSQL database backup files from a local directory and restores its content, with special respect to *g*eographic *i*nformation *s*ystems.
+I'd like to introduce a little container I created, [load-postgis][load-postgis]. It loads PostgreSQL database backup files from a local directory and restores its content, with special respect to **g**eographic **i**nformation **s**ystems.
 
 <!--more-->
 
@@ -47,9 +47,9 @@ docker run -p 5432:5432 --rm -v /local/database/dumps/:/restore newtork/load-pos
 {% include tags/hint-start.html %}
 In case you still want to manually save the database changes, you may run...
 
-```docker run -p 5432:5432 --rm --name psql -v /local/database/dumps/:/restore newtork/load-postgis```
+`docker run -p 5432:5432 --rm --name psql -v /dumps/:/restore newtork/load-postgis`
 
-```docker exec -it psql pg_dump -U postgres -Fc -f /restore/DATABASE.BAK DATABASE_NAME```
+`docker exec -it psql pg_dump -U postgres -Fc -f /restore/DB_NAME.BAK DB_NAME`
 {% include tags/hint-end.html %}
 
 
@@ -58,3 +58,4 @@ In case you still want to manually save the database changes, you may run...
 [dockerhub]: https://hub.docker.com/r/newtork/load-postgis/
 [postgis]: http://postgis.net/
 [gis]: https://en.wikipedia.org/wiki/Geographic_information_system
+[spatial]: /weblog/2016/12/05/update-spatial-election

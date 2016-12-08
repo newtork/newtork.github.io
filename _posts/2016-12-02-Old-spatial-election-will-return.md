@@ -14,6 +14,8 @@ In less than a year, there will be the next [elections for the Bundestag in Germ
 
 First of all, here is the [demo][demo].
 
+![v1small][imgV1s]
+
 I have used the opportunity to upload my project again to a live environment. Even though it has been years since I touched it, I will be more than happy to upload new data about the same time next year. With a little luck we will see additional trends in how much change has happened in a spatial perception.
 
 Unfortunately it is currently not possible to run the *WAR* file on the latest [Tomcat][tomcat] server. But thanks to the jetty runtime environment, the newly compiled, portable version is still good to go. Hopefully I'm going to find a little time during the upcoming months to refurbish the project: the visuals, load time and resource consumption are subpar.
@@ -88,3 +90,4 @@ Close *psql* sessions with ```\q```
 [demo]: https://newtork.de/spatial.election/
 [wiki]: https://github.com/a-d/spatial.election/wiki
 [tomcat]: http://tomcat.apache.org/
+[imgV1s]: https://newtork.de/dl/spatial_election/preview01_small.png

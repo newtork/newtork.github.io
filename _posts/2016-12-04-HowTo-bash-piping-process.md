@@ -12,7 +12,7 @@ While I worked on my [OpenTTD container][dockerottd], I came to the challenge of
 
 <!--more-->
 
-This is a template. Feel free to replace ``PROCESS``, ``START`` and ``END`` as you like.
+This is a template. Feel free to replace ``PROCESS``, ``"START"`` and ``"END"`` as you like.
 
 ```
 #!/bin/bash
