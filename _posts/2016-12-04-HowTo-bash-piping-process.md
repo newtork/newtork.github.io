@@ -5,7 +5,7 @@ date:   2016-12-04 07:00:00 +0000
 modified: 2016-12-04 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/04/howto-bash-piping-process/
-categories: docker bash process io
+categories: howto pipe process io bash
 ---
 
 While I worked on my [OpenTTD container][dockerottd], I came to the challenge of wrapping a process for initial and final input and output, and temporarily guarding it from interrupt signals. This is my solution.
