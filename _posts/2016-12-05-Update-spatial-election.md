@@ -17,14 +17,18 @@ First of all, here is the [demo][demo].
 
 ![v1small][imgV1s] ![v2small][imgV2s]
 
-Preview Images | [V1.0][imgV1] | [V2.0][imgV2]
+Preview Images &#124; [V1.0][imgV1] &#124; [V2.0][imgV2]
+
+
+
+---
 
 
 ## Downloads
 
-- Tomcat WAR | [1.0][w1] | [2.0][w2]
-- Executable JAR | [1.0][j1] | [2.0][j2]
-- PSQL Database | [1.0][db1] | [2.0][db2]
+- Tomcat WAR &#124; [1.0][w1] &#124; [2.0][w2]
+- Executable JAR &#124; [1.0][j1] &#124; [2.0][j2]
+- PSQL Database &#124; [1.0][db1] &#124; [2.0][db2]
 
 
 ### Requirements for spatial.election 2.0
@@ -33,10 +37,17 @@ Preview Images | [V1.0][imgV1] | [V2.0][imgV2]
  - PostGIS ~~2.1~~ 2.3.1
  - Tomcat *7.0*
  - Java ~~1.7~~ 1.8
+ 
+ 
+ 
+---
+
 
 ### Run
 
 The easiest way to run the software, is to run an up-to-date *Java* and my Docker [Postgis container][docker]. Here are the details...
+
+
 
 #### Java
 
@@ -49,6 +60,10 @@ java version "1.8.0_111"
 Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode
 ```
+
+
+---
+
 
 #### Database
 
@@ -63,6 +78,9 @@ dpkg -l | grep postgis
 
  - **(b)** Just use my container [docker-load-postgis][docker] to run the GIS database. 
 
+ 
+---
+
 #### Execution
 
  - **(a)** Install and run *Tomcat*. Upload and deploy the **WAR** file provided. If the startup fails, check the [Java Version which the Tomcat Server runs on][metatomcat].
@@ -73,12 +91,15 @@ java -jar server##2.0-20161203.jar
 ```
 
 
+---
+
+
 ### Changes
 
- - [*general*] new dependencies with new methods, e.g. jetty moved from *org.codehaus* to *org.eclipse*
- - [*general*] moved from direct Hibernate implementation to JPA API
- - [*database*] fixed key column types on various tables: *smallint, bigint, integer* to *integer*
- - [*website*] changed visuals from insignificant "Erststimme" to important "Zweitstimme", fixed bug in calculating colour intensity.
+ - *[general]* new dependencies with new methods, e.g. jetty moved from *org.codehaus* to *org.eclipse*
+ - *[general]* moved from direct Hibernate implementation to JPA API
+ - *[database]* fixed key column types on various tables: *smallint, bigint, integer* to *integer*
+ - *[website]* changed visuals from insignificant "Erststimme" to important "Zweitstimme", fixed bug in calculating colour intensity.
 
 
 [spatial]: https://github.com/a-d/spatial.election/

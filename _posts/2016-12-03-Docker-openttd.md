@@ -36,7 +36,7 @@ newtork/openttd [save [config [name]]]
 
 ```
 docker run -dit -p 3979:3979/tcp -p 3979:3979/udp newtork/openttd [savegame] [settings] [servername]
-	\_____________/ \_______________________________/ \_____________/  \______/  \________/  \_________/
+\_____________/ \_______________________________/ \_____________/  \______/  \________/  \_________/
       |                        |                      |              |           |            |
  interactive       required port forwarding      maintainer     save game   config string   public game
   detached          destination port can be        build          name      \n-seperated    server name
