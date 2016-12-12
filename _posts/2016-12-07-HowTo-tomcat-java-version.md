@@ -5,7 +5,8 @@ date:   2016-12-07 07:00:00 +0000
 modified: 2016-12-07 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/07/howto-tomcat-java-version/
-categories: howto bash tomcat java
+categories: howto
+tags: howto bash tomcat java
 ---
 
 When working with Debian the default repositories often only provide software versions of older age. That's why as of today the Tomcat server will be only distributed with Java 7. And if you are required to use a more recent version of this programming language, you'll need to tell Tomcat which binary to use.

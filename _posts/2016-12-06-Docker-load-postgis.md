@@ -5,7 +5,8 @@ date:   2016-12-06 07:00:00 +0000
 modified: 2016-12-06 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/06/docker-load-postgis/
-categories: project docker bash postgresql postgis database
+categories: project docker-load-postgis
+tags: project docker-load-postgis docker bash postgresql postgis database container database
 ---
 
 I'd like to introduce a little container I created, [load-postgis][load-postgis]. It loads PostgreSQL database backup files from a local directory and restores its content, with special respect to **g**eographic **i**nformation **s**ystems.
@@ -17,7 +18,7 @@ The easiest way to manage data from [geographic information systems][gis] is to 
 Recently I started to revisit [an GIS university project][spatial] which I've worked on some years ago. To tidy up the development environment I've decided containerize the database. That way I'm no longer limited to my local machine and operation system, when working on the project.
 
 
-## Usage ##
+## Usage
 
  - download container from [Docker Hub][dockerhub]
  
@@ -37,7 +38,7 @@ docker run -p 5432:5432 --rm newtork/load-postgis
 docker run -p 5432:5432 --rm -v /local/database/dumps/:/restore newtork/load-postgis
 ```
 
-## Remarks ##
+## Remarks
 
  - the container is only suitable for development purposes
  - accessible default login: *postgres/postgres*

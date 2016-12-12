@@ -5,7 +5,8 @@ date:   2016-12-01 07:00:00 +0000
 modified: 2016-12-01 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/01/new-website-stub-paper-page/
-categories: project website stub paperpage php html
+categories: project paperpage 
+tagsd: website-stub javascript css html project paperpage demo
 ---
 
 Another little, personal web project yielded the need for a gimmicky site. Especially on mobile devices the "touch" feature can bring additional aspects to the usability. I liked the idea of turning pages, that's why I forked [botelho/flipboard-layout](https://github.com/botelho/flipboard-layout) in 2014. I did some digging, and here it is again: [Paper Page][paper].

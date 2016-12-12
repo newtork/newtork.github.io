@@ -5,8 +5,8 @@ date:   2016-11-29 08:00:00 +0000
 modified: 2016-11-29 08:00:00 +0000 
 comments: true
 permalink: /weblog/2016/11/29/starting-a-blog/
-categories: meta blog
-excerpt_separator: <!--more-->
+categories: blog
+tags: meta jekyll github blog
 ---
 
 [fishi0x01][fish] encouraged me to start a developer blog. Thanks to him, I shall now be able to write down some thoughts, show difficulties I face during development and explain their solutions. It will also help me to keep track of progression on private projects, as well as announce their improvement and promote upcoming releases.
