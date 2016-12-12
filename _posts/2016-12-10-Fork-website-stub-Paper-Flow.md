@@ -12,7 +12,7 @@ In order to give the [Paper Page][paperpage] website template a little spin, I d
 
 <!--more-->
 
-First of all, feel free to look at the [showcasse][deafflow].
+First of all, feel free to look at the [showcase][deafflow].
 
 
 ![demo-image0][paperflow-showcase0] 
