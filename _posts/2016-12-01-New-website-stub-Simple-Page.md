@@ -4,7 +4,7 @@ title:  "New: website stub - Simple Page"
 date:   2016-12-01 18:00:00 +0000
 modified: 2016-12-01 18:00:00 +0000 
 comments: true
-permalink: /weblog/2016/11/30/new-website-stub-simple-page/
+permalink: /weblog/2016/12/01/new-website-stub-simple-page/
 categories: project website stub simplepage php html
 excerpt_separator: <!--more-->
 ---
@@ -15,11 +15,13 @@ Taken from a little side project for a client who just wanted a simple website w
 
 First of all, feel free to look into the [demo][demo].
 
+![demo-image][simplepage0]
+
 Often I find myself annoyed by a website using tons of scripts, animation, ads and external assets. Especially when having security concerns visiting a static site is quite pleasant surprise. That's why I try to stay away from JavaScript as much as I can. My approach consists of using CSS for instant page turns and PHP for the template and i18n. Cookies are disabled, but a session can be maintained by the *PHPSESSID* URL argument; although this is not recommended.
 
 To keep things simple, I didn't implement nested templates or any logic, like iterations. That way the whole HTML template could fit into one file and the template engine stays rudimentary. Furthermore I wanted to avoid email interaction, for now. That's why logging to a text file should be a good enough start.
 
-### Features ###
+### Features
 
  - static website for simple, multiple pages
  - no JavaScript, no reloading assets, no cookies, no dynamics
@@ -41,3 +43,4 @@ If you are interested in the static page file, please just use the *save* featur
 [simple]: https://github.com/newtork/website-stub/tree/master/simplepage
 [stub]: https://github.com/newtork/website-stub
 [demo]: http://newtork.de/simplepage/
+[simplepage0]: /content-images/simplepage0.jpg

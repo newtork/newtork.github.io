@@ -4,7 +4,7 @@ title:  "New: website stub - Paper Page"
 date:   2016-12-01 07:00:00 +0000
 modified: 2016-12-01 07:00:00 +0000 
 comments: true
-permalink: /weblog/2016/11/30/new-website-stub-paper-page/
+permalink: /weblog/2016/12/01/new-website-stub-paper-page/
 categories: project website stub paperpage php html
 ---
 
@@ -14,9 +14,12 @@ Another little, personal web project yielded the need for a gimmicky site. Espec
 
 First of all, feel free to look into the [demo][demo].
 
+![demo-image0][paperpage0] 
+![demo-image1][paperpage1]
+
 Because the original project had great UI performance and visuals, I chose to start from there. I've updated the JavaScript dependencies, added rotation and bookmarks and did some visual tweaking.
 
-### Features ###
+### Features
 
  - static website for simple, multiple pages
  - JavaScript driven page turning
@@ -33,3 +36,5 @@ Now that I'm back to working with this template, I'm going to add other features
 [paper]: https://github.com/newtork/website-stub/tree/master/paperpage
 [stub]: https://github.com/newtork/website-stub
 [demo]: http://newtork.de/paperpage/
+[paperpage0]: /content-images/paperpage0.jpg
+[paperpage1]: /content-images/paperpage1.jpg
