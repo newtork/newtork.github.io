@@ -41,14 +41,14 @@ apt-get update
 apt-get install oracle-java8-installer
 ```
 
-	Usually the repository packages hosted on the [Canonical launchpad platform][launchpad] would not support Debian hosts, because they are built against Ubuntu libraries. But this package distributed by the [WebUpd8][webupd8] team only contains an installer, making it conveniently work on Debian too.
+Usually the repository packages hosted on the [Canonical launchpad platform][launchpad] would not support Debian hosts, because they are built against Ubuntu libraries. But this package distributed by the [WebUpd8][webupd8] team only contains an installer, making it conveniently work on Debian too.
 
 
 ### Tomcat
 
  - Check the active Java runtime environment on the Tomcat server manager status page: `http://localhost:8080/manager/status`
 
-[!before][img-tom-old]
+![before][img-tom-old]
 ([zoom][img-tom-old-big])
 
  - If the displayed version does not suffice, the following changes are needed in `/etc/default/tomcat7` to set a different binary path.
@@ -63,7 +63,7 @@ service tomcat7 restart
 
  - A follow up check on the Tomcat server manager status page should yield the correct JVM version,
 
-[!after][img-tom-new]
+![after][img-tom-new]
 ([zoom][img-tom-new-big])
 
 
@@ -71,7 +71,7 @@ service tomcat7 restart
  
 [launchpad]: https://launchpad.net/
 [webupd8]: http://www.webupd8.org/
-[spatial.election]: 
+[spatial.election]: https://github.com/a-d/spatial.election/
 [tomcat]: https://packages.debian.org/jessie/tomcat7
 [img-tom-new]: /content-images/tomcat_jvm_new_small.jpg
 [img-tom-new-big]: /content-images/tomcat_jvm_new.jpg
