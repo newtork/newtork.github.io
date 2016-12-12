@@ -25,7 +25,6 @@ First of all, feel free to look at the [showcase][deafflow].
  - **custom featured image placement and dimension**
  - **custom post box ordering, placement and dimension**
  - **categories as bookmarks**
- - **new post type: event - featuring date, location and URLs**
  - JavaScript driven page turning
  - optimized for touch devices and displays of all sizes
  - fall back stylesheet for a display too small
