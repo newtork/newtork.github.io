@@ -14,7 +14,6 @@ While I worked on my [OpenTTD container][dockerottd], I came to the challenge of
 
 This is a template. Feel free to replace ``PROCESS``, ``"START"`` and ``"END"`` as you like.
 
-![diagram][dia]
 
 ```
 #!/bin/bash
@@ -64,6 +63,10 @@ fi
 
 exit 0
 ```
+
+
+
+![diagram][dia]
 
 [dockerottd]: https://github.com/newtork/docker-openttd
 [dia]: /content-images/piping0.png
