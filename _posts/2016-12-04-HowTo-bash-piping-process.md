@@ -14,6 +14,8 @@ While I worked on my [OpenTTD container][dockerottd], I came to the challenge of
 
 This is a template. Feel free to replace ``PROCESS``, ``"START"`` and ``"END"`` as you like.
 
+![diagram][dia]
+
 ```
 #!/bin/bash
 
@@ -22,11 +24,11 @@ mkfifo myfifo
 cat > myfifo &
 pid_cat=$!
 setsid PROCESS < myfifo &
-pid_ottd=$!
+pid_proc=$!
 
 # get server status, 0=running, 1=terminated
 running() {
-	if ps -p $pid_ottd > /dev/null
+	if ps -p $pid_proc > /dev/null
 	then return 0
 	else return 1
 	fi
@@ -48,7 +50,7 @@ savelyexit() {
 trap savelyexit SIGINT SIGTERM EXIT
 # additional signals could be INT SIGHUP
 
-# load game if save file is already existing
+# send initial command to the server
 echo "START" > myfifo
 
 # check whether server has started and is still running
@@ -64,3 +66,4 @@ exit 0
 ```
 
 [dockerottd]: https://github.com/newtork/docker-openttd
+[dia]: /content-images/piping0.png
