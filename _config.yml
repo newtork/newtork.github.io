@@ -29,21 +29,22 @@ defaults:
   -
     scope:
       path: ""
-      type: pages
-    values:
-      layout: page
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  -
-    scope:
-      path: ""
       type: my_tags
     values:
       layout: posts_by_tag
+	  
+#  -
+#    scope:
+#      path: ""
+#      type: pages
+#    values:
+#      layout: page
+#  -
+#    scope:
+#      path: ""
+#      type: posts
+#    values:
+#      layout: post
 #  -
 #    scope:
 #      path: "project"
