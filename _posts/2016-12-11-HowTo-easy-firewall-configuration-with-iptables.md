@@ -61,7 +61,9 @@ If you are certain everything is setup correctly, and you are be able to access 
 /bin/sh /etc/iptables_settings.sh
 ```
 
-If you are still connected, congratulation! Time to add the script to the system auto start. Edit the file `/etc/rc.local` and add the following line **before** the last line `exit 0`.
+If you are still connected, congratulation! Time to add the script to the system auto start.
+
+ - Edit the file `/etc/rc.local` and add the following line **before** the last line `exit 0`.
 
 ```
 [ -e '/etc/iptables_settings.sh' ] && /bin/sh /etc/iptables_settings.sh
