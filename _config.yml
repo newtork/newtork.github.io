@@ -1,8 +1,8 @@
 # Location of collections
-collections:
-  my_tags:
-    output: true
-    permalink: /tag/:name/
+#collections:
+#  my_tags:
+#    output: true
+#    permalink: /tag/:name/
 #  my_categories:
 #    output: true
 #    permalink: /category/:name/
@@ -25,13 +25,13 @@ gems:
 markdown: kramdown
 
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: posts_by_tag
+#defaults:
+#  -
+#   scope:
+#      path: ""
+#     type: my_tags
+#    values:
+#      layout: posts_by_tag
 	  
 #  -
 #    scope:
@@ -51,12 +51,12 @@ defaults:
 #    values:
 #      layout: project#
 #
-  #-
-  #  scope:
-  #    path: ""
-  #    type: my_categories
-  #  values:
-  #    layout: posts_by_category
+#  -
+#    scope:
+#      path: ""
+#      type: my_categories
+#    values:
+#      layout: posts_by_category
 	  
 # Site settings
 title: Alexander Dümont
