@@ -1,8 +1,8 @@
 # Location of collections
-collections:
-  my_tags:
-    output: true
-    permalink: /tag/:name/
+#collections:
+#  my_tags:
+#    output: true
+#    permalink: /tag/:name/
 #  my_categories:
 #    output: true
 #    permalink: /category/:name/
