@@ -7,6 +7,11 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">Published on {{ page.date | date: "%b %-d, %Y" }}</time></p>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="dateModified">Last modified on {{ page.modified | date: "%b %-d, %Y" }}</time></p>
+	<p class="post-meta" style="text-align: justify;">
+	Tags:
+	{% assign tags = page.tags | sort %}
+	{% include tagcloud.html %}
+	</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
