@@ -13,7 +13,7 @@ When working with Debian the default repositories often only provide software ve
 
 <!--more-->
 
-For a recently upgraded Java project ([spatial election][spatial.election]) I needed [Tomcat][tomcat] to run a newer version of the runtime environment and development kit.
+For a recently upgraded Java project ([spatial election][spatial.election]) I needed [Tomcat][tomcat] to run a newer version of the Java runtime environment and development kit. I used the following upgrade routine...
 
 ### Java
 
@@ -61,7 +61,7 @@ vim /etc/default/tomcat7
 service tomcat7 restart
 ```
 
- - A follow up check on the Tomcat server manager status page should yield the correct JVM version,
+ - A follow up check on the Tomcat server manager status page should finally yield the correct JVM version.
 
 ![after][img-tom-new]
 ([zoom][img-tom-new-big])
