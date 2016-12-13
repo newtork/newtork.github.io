@@ -5,8 +5,8 @@ date:   2016-12-01 18:00:00 +0000
 modified: 2016-12-01 18:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/01/new-website-stub-simple-page/
-categories: project simplepage
-tags: project css php html demo
+categories: project
+tags: project css php html demo simplepage template
 ---
 
 Taken from a little side project for a client who just wanted a simple website without any heavy requirements, I want to give you the little template engine I created and more importantly the static HTML approach I exercised: [Simple Page][simple]

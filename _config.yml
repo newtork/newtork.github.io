@@ -1,63 +1,61 @@
 # Location of collections
-#collections:
-#  my_tags:
-#    output: true
-#    permalink: /tag/:name/
-#  my_categories:
-#    output: true
-#    permalink: /category/:name/
+collections:
+  meta_tags:
+    output: true
+    permalink: /tag/:name/
+  meta_categories:
+    output: true
+    permalink: /category/:name/
 
 exclude:
   - Gemfile
   - README.md
 
-	
+
 gems:
   - jekyll-gist
   - jekyll-sitemap
   - jekyll-redirect-from
-# - jekyll-paginate
-# - jekyll-feed
-# - jekyll-seo-tag
+#  - jekyll-seo-tag
+#  - jekyll-feed
+#  - jekyll-paginate
 
 
 # Build settings
 markdown: kramdown
 
 
-#defaults:
-#  -
-#   scope:
-#      path: ""
-#     type: my_tags
-#    values:
-#      layout: posts_by_tag
-	  
-#  -
-#    scope:
-#      path: ""
-#      type: pages
-#    values:
-#      layout: page
-#  -
-#    scope:
-#      path: ""
-#      type: posts
-#    values:
-#      layout: post
-#  -
-#    scope:
-#      path: "project"
-#    values:
-#      layout: project#
-#
-#  -
-#    scope:
-#      path: ""
-#      type: my_categories
-#    values:
-#      layout: posts_by_category
-	  
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: "project"
+    values:
+      layout: project
+  -
+    scope:
+      path: ""
+      type: meta_tags
+    values:
+      layout: posts_by_tag
+  -
+    scope:
+      path: ""
+      type: meta_categories
+    values:
+      layout: posts_by_category
+
 # Site settings
 title: Alexander Dümont
 email: alexander_duemont@web.de

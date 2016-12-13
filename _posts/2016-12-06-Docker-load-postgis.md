@@ -5,7 +5,7 @@ date:   2016-12-06 07:00:00 +0000
 modified: 2016-12-06 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/06/docker-load-postgis/
-categories: project docker-load-postgis
+categories: project
 tags: project docker bash postgres postgis database database
 ---
 

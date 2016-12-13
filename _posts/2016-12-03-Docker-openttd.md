@@ -5,7 +5,7 @@ date:   2016-12-03 07:00:00 +0000
 modified: 2016-12-03 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/03/docker-openttd/
-categories: project docker-openttd
+categories: project
 tags: project docker bash
 ---
 

@@ -5,8 +5,8 @@ date:   2016-12-05 07:00:00 +0000
 modified: 2016-12-05 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/05/update-spatial-election/
-categories: project spatial-election
-tags: project postgis postgres java website demo tomcat
+categories: project
+tags: project postgis postgres java website demo tomcat spatial-election
 ---
 
 When I [revisited][metaspatial] my old [spatial.election][spatial] uni project, I faced several issues while trying to start it on modern versions of Java, PostgreSQL and Tomcat. I seized the opportunity to give it a major update and fix some old bugs.
