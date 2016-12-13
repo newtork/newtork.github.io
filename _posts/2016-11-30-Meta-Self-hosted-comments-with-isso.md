@@ -6,7 +6,7 @@ modified: 2016-11-30 08:00:00 +0000
 comments: true
 permalink: /weblog/2016/11/30/self-hosted-comments-with-isso/
 categories: blog
-tags: server blog comments meta isso disgus
+tags: blog meta
 ---
 
 Communication on a blog doesn't inevitably have to be unidirectional. More than once I found solutions to my tech problems in the comments section of a related thread, thanks to popular search engines. Having a static website usually means embedding a third-party commenting service, most often [Disqus][disqus]. But there is an alternative: [Isso][isso].

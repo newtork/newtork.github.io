@@ -6,7 +6,7 @@ modified: 2016-12-09 07:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/09/howto-fail2ban-with-apache/
 categories: howto
-tags: howto fail2ban apache security ban ip
+tags: howto fail2ban apache security
 ---
 
 

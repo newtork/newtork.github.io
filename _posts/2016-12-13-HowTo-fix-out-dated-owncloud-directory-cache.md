@@ -6,7 +6,7 @@ modified: 2016-12-13 07:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/13/howto-fix-out-dated-owncloud-directory-cache/
 categories: howto
-tags: howto linux bash owncloud directory cache
+tags: howto linux bash owncloud
 ---
 
 When copying user accounts and files from one dedicated [OwnCloud][oc] instance to another, I faced the problem of an out-dated directory cache. Some files could not be deleted and new files could not be created on the web interface. And the wordpress and apache logs strangely did not gave any indication of a problem. While not being a huge problem, but instead easily fixable, it still gave me some minutes to investigate.

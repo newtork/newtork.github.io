@@ -6,7 +6,7 @@ modified: 2016-12-03 07:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/03/docker-openttd/
 categories: project docker-openttd
-tags: project docker-openttd docker bash openttd container
+tags: project docker bash
 ---
 
 My first steps with docker have been quite exciting. I decided to create a container to easily run an [OpenTTD][dockerottd] gameserver. This build comes with some neat little features, to stick out from conventional OpenTTD Docker containers.

@@ -6,7 +6,7 @@ modified: 2016-12-06 07:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/06/docker-load-postgis/
 categories: project docker-load-postgis
-tags: project docker-load-postgis docker bash postgresql postgis database container database
+tags: project docker bash postgres postgis database database
 ---
 
 I'd like to introduce a little container I created, [load-postgis][load-postgis]. It loads PostgreSQL database backup files from a local directory and restores its content, with special respect to **g**eographic **i**nformation **s**ystems.

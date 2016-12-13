@@ -57,3 +57,12 @@ body {
 .post-content table th {
     border-bottom: 1px solid #ccc;
 }
+
+
+/*
+ * tag cloud
+ */
+ 
+.post-meta span {
+	display:inline-block;
+}

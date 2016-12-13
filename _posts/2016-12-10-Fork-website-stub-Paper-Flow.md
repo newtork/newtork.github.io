@@ -5,7 +5,8 @@ date:   2016-12-10 07:00:00 +0000
 modified: 2016-12-10 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/10/Fork-paper-page-paper-flow/
-categories: project website stub paperpage fork wordpress theme paperflow deaf flow php html
+categories: project paperflow
+tags: website stub fork wordpress php html
 ---
 
 In order to give the [Paper Page][paperpage] website template a little spin, I decided to implement it as a [WordPress theme][wordpressthheme]. That way the content and template management will be easily achieved. And here it is: [Paper Flow][paperflow].

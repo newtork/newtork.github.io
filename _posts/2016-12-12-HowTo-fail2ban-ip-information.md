@@ -6,7 +6,7 @@ modified: 2016-12-12 07:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/12/howto-fail2ban-ip-information/
 categories: howto
-tags: howto fail2ban apache security ban ip
+tags: howto fail2ban apache security
 ---
 
 [Fail2Ban][f2b] allows the server administrator to have his access log files being automatically monitored for malicious behaviour. Often enough it's interesting to see where the attack comes from geographically. And sometimes this helps identifying bugs with broken client software or wrong user authentication. Since my installation of Fail2Ban was unable to detect the public IP whois information, I tweaked the notification action command to load the missing data.

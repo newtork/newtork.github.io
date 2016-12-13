@@ -6,7 +6,7 @@ modified: 2016-12-08 07:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/08/howto-find-duplicate-files-on-linux/
 categories: howto
-tags: howto duplicate files linux bash
+tags: howto linux bash
 ---
 
 Once in a while a client comes by and asks for help with their duplicate files on the cloud storage platform. This happens especially often, when users manage their backups on their own without proper introduction or training. Then you'll face files over files, scattered everywhere on the clients storage, with uncertain timestamps and no meaningful user logs. That's when the following shell script might come in handy.

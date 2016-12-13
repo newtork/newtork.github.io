@@ -6,7 +6,7 @@ modified: 2016-12-14 07:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/14/howto-fail2ban-custom-filters/
 categories: howto
-tags: howto fail2ban apache security ban ip
+tags: howto fail2ban apache security
 ---
 
 

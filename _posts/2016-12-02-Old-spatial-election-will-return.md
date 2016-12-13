@@ -6,7 +6,7 @@ modified: 2016-12-02 07:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/02/old-spatial-election-will-return/
 categories: project spatial-election
-tags: website revisited java project spatial-election demo tomcat postgis postgres
+tags: website java project demo tomcat postgis postgres
 ---
 
 In less than a year, there will be the next [elections for the Bundestag in Germany][election]. Again we will face interesting political outcomes and changing trends on the level of country, state and city, even district. Thanks to the wonders of the World Wide Web, we can acknowledge statistics to almost anything in high definition. In a little web project I did some years ago, I examined political, social and economical data of districts in Germany with regard to spatial properties and the results of the federal election in 2013: [spatial.election][spatial]
