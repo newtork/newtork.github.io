@@ -43,3 +43,17 @@ body {
 #isso-thread .auth-section .input-wrapper {
     padding: 0.2em 0.3em;
 }
+
+
+/*
+ * special table definition
+ */
+
+.post-content table {
+	margin: 2em 0px;
+    border: 1px solid #ccc;
+    font-size: 0.8em;
+}
+.post-content table th {
+    border-bottom: 1px solid #ccc;
+}

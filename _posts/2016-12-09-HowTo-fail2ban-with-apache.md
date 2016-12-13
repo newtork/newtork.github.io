@@ -123,7 +123,7 @@ for filter in apache apache-noscript apache-overflows apache-badbots apache-noho
 enabled  = true\n\
 filter   = $filter\n\
 logpath  = /var/log/apache*/*error*.log\n\
-maxretry = 1\n\
+maxretry = 1\n\n\
 \
 " $filter >> /etc/fail2ban/jail.local; done
 ```

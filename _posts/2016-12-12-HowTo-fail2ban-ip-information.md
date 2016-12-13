@@ -14,10 +14,8 @@ tags: howto fail2ban apache security ban ip
 
 <!--more-->
 
-*Fail2Ban* is a tool for banning IP addresses via *iptables*, given by lists of logical rules and filters on log files. Click on the blog *tag* above to find a introduction.
+*Fail2Ban* is a tool for banning IP addresses via *iptables*, given by lists of logical rules and filters on log files. Click on the blog *tag* above to find an introduction.
 
-
-![fail2banmail][mail]
 
 ### Configuration
 
@@ -30,6 +28,9 @@ grep 'action = %(action_' /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 ```
 
 Here the "**M**ail-**W**hoIs-**L**ines" action is enabled by default, meaning the admin will receive a mail with who-is information of any IP being banned, together with the affected log lines.
+
+
+![fail2banmail][mail]
 
  
 ### Improving the *actionban* command

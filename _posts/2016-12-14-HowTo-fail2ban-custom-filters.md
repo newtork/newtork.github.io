@@ -10,12 +10,12 @@ tags: howto fail2ban apache security ban ip
 ---
 
 
-The first time I ecnountered [Fail2Ban][f2b] and found it to be a useful tool, was when ransom malware has started to appear on client machines. We've been afraid the malware would propagate to our cloud storage platforms. Fortunately the active malware *Locky* would place signature files and unique file extensions for encrypted files. With a tool like *Fail2Ban* we are able to monitor the webserver traffic for incriminating file uploads by the meta data, e.g. file names.
+The first time I encountered [Fail2Ban][f2b], and found it to be a useful tool, was when ransom malware has started to appear on client machines. Now there was a real risk the malware would propagate to the cloud storage platform. Fortunately the active malware *Locky* would place signature files and unique file extensions for encrypted files. With a tool like *Fail2Ban* we are able to monitor the webserver traffic for incriminating file uploads by the meta data, e.g. file names.
 
 
 <!--more-->
 
-*Fail2Ban* is a tool for banning IP addresses via *iptables*, given by lists of logical rules and filters on log files. Click on the blog *tag* above to find a introduction.
+*Fail2Ban* is a tool for banning IP addresses via *iptables*, given by lists of logical rules and filters on log files. Click on the blog *tag* above to find an introduction.
 
 
 ### Banning uploads by file names, e.g. *Locky* ransom malware
@@ -53,7 +53,7 @@ Any uploads of files ending with *\*.locky* or the *...instructions.txt* will be
  
 ### Banning malicous HTTP requests
 
-Every minute a web server will be spammed with useless requests to test for server misconfigurations, e.g. proxy request. To block these malicious requests, I wrote a filter to block any abnormal request, no corresponding with the default request. **Note:** this is experimental.
+Every minute a web server will be spammed with useless requests to test for server misconfigurations, e.g. proxy request. To block these malicious requests, I wrote a filter to block any abnormal request, not corresponding with a default request. **Note:** this is experimental.
 
 ```
 vim /etc/fail2ban/jail.local
