@@ -1,5 +1,0 @@
----
-layout: tagpage
-tag: database
-permalink: /tags/database
----
