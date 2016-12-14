@@ -12,14 +12,14 @@ Communication on a blog doesn't inevitably have to be unidirectional. More than 
 
 <!--more-->
 
-### Disqus ###
+### Disqus
 
 [Disqus][disqus] is a feature rich comment system service. When not talking about WordPress, it is probably the most popular one. Unfortunately distributed by a commercial company, it is neither open source nor self hosting. And when talking about user privacy and their data protection, these are some serious downsides which have to be considered.
 
 Other competitors in the segment are [Muut][muut], [Adobe Livefyre][livefyre] and [Jetpack for WordPress][jetpack].
 
 
-### [Isso][isso] ###
+### [Isso][isso]
 
 "Isso" is an acronym for the German saying: *Ich schrei' sonst* / *Otherwise, I scream*. The software is used to establish comments on websites otherwise being without any interactivity. On a dedicated, self-hosted web server you can manage all user comments by yourself.
 

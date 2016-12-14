@@ -1,4 +1,4 @@
 ---
 slug: owncloud
-name: owncloud
+name: OwnCloud
 ---
