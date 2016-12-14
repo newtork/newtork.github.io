@@ -19,13 +19,8 @@ layout: default
 		{% endif %}
 		
 		
-		{% if page.categories  %}
-			in 
-			{% for category in page.categories %}
-			<a class="label" href="/category/{{ category }}">{{ category }}</a>
-			{% endfor %}
-		{% endif %}
-		
+		{% assign categories = page.categories %}
+		{% include categorylist.html %}
 	</p>
 	<p class="post-meta" style="text-align: justify;">
 	Tags:

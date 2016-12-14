@@ -58,6 +58,13 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
+.post-content span[title] {
+	border-bottom: 1px dotted #555;
+    line-height: 1em;
+}
+.post-content span[title]:hover {
+	border-bottom: 1px solid #555;
+}
 
 /*
  * tag cloud
