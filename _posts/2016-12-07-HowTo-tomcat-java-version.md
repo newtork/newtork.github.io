@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HowTo: Change the Java Runtime Environment of Tomcat"
 date:   2016-12-07 07:00:00 +0000
 modified: 2016-12-07 07:00:00 +0000 

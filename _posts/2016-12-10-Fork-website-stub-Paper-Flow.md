@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Fork: Paper Page - Paper Flow (WordPress Theme)"
 date:   2016-12-10 07:00:00 +0000
 modified: 2016-12-10 07:00:00 +0000 

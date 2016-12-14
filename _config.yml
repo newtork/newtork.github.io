@@ -40,11 +40,6 @@ defaults:
       layout: post
   -
     scope:
-      path: "project"
-    values:
-      layout: project
-  -
-    scope:
       path: ""
       type: meta_tags
     values:
@@ -59,7 +54,7 @@ defaults:
 # Site settings
 title: Alexander Dümont
 email: alexander_duemont@web.de
-description: "Personal solutions to little programming problems."
+description: "Personal solutions to smaller programming problems."
 baseurl: "" 
 url: "http://blog.newtork.de" 
 headline: "Newtork"

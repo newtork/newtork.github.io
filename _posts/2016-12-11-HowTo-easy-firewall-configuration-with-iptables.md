@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HowTo: easy firewall configuration with iptables"
 date:   2016-12-11 07:00:00 +0000
 modified: 2016-12-11 07:00:00 +0000 

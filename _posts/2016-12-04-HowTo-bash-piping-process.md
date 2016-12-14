@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HowTo: Piping a process I/O with Bash"
 date:   2016-12-04 07:00:00 +0000
 modified: 2016-12-04 07:00:00 +0000 

@@ -1,4 +1,4 @@
 ---
 slug: java
-name: java
+name: Java
 ---

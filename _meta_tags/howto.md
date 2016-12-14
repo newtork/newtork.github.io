@@ -1,4 +1,4 @@
 ---
 slug: howto
-name: howto
+name: HowTo
 ---

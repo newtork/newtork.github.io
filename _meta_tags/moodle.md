@@ -1,0 +1,4 @@
+---
+slug: moodle
+name: Moodle
+---

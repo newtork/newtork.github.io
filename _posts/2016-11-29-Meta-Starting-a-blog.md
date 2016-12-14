@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "Meta: Starting a blog"
 date:   2016-11-29 08:00:00 +0000
 modified: 2016-11-29 08:00:00 +0000 
 comments: true
 permalink: /weblog/2016/11/29/starting-a-blog/
-categories: blog
+categories: blog howto
 tags: meta jekyll github blog
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HowTo: Fix out-dated OwnCloud directory cache"
 date:   2016-12-13 07:00:00 +0000
 modified: 2016-12-13 07:00:00 +0000 

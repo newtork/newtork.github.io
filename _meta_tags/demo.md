@@ -1,4 +1,4 @@
 ---
 slug: demo
-name: demo
+name: Demo
 ---

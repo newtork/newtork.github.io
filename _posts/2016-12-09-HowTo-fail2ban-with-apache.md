@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HowTo: Use fail2ban with apache for security"
 date:   2016-12-09 07:00:00 +0000
 modified: 2016-12-09 07:00:00 +0000 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "New: website stub - Paper Page"
 date:   2016-12-01 07:00:00 +0000
 modified: 2016-12-01 07:00:00 +0000 

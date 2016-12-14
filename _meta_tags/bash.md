@@ -1,4 +1,4 @@
 ---
 slug: bash
-name: bash
+name: Bash
 ---

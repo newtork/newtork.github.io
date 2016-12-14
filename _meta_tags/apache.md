@@ -1,4 +1,4 @@
 ---
 slug: apache
-name: apache
+name: Apache
 ---

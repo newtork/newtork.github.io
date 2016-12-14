@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HowTo: Let fail2ban automatically gather IP information"
 date:   2016-12-12 07:00:00 +0000
 modified: 2016-12-12 07:00:00 +0000 

@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<h1>Posts in '{{ page.name }}':</h1>
+<h1>Posts in '{{ page.name }}'</h1>
+<p class="post-meta">{{ page.description }}</p>
 
 <div class="text-justify">
   {% if site.categories[page.slug] %}

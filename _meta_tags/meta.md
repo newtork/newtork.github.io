@@ -1,4 +1,4 @@
 ---
 slug: meta
-name: meta
+name: Meta
 ---

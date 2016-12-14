@@ -1,4 +1,4 @@
 ---
 slug: firewall
-name: firewall
+name: Firewall
 ---

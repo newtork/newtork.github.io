@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HowTo: Find duplicate files on linux"
 date:   2016-12-08 07:00:00 +0000
 modified: 2016-12-08 07:00:00 +0000 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HowTo: fail2ban and custom filters"
 date:   2016-12-14 07:00:00 +0000
 modified: 2016-12-14 07:00:00 +0000 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Old: spatial.election will return in 2017"
 date:   2016-12-02 07:00:00 +0000
 modified: 2016-12-02 07:00:00 +0000 

@@ -1,4 +1,4 @@
 ---
 slug: database
-name: database
+name: Database
 ---

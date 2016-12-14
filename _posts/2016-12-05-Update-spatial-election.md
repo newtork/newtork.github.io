@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Update: spatial.election 2.0"
 date:   2016-12-05 07:00:00 +0000
 modified: 2016-12-05 07:00:00 +0000 

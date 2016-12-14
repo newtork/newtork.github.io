@@ -1,4 +1,4 @@
 ---
 slug: html
-name: html
+name: HTML
 ---

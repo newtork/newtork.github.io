@@ -1,4 +1,4 @@
 ---
 slug: css
-name: css
+name: CSS
 ---

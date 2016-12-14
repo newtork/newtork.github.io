@@ -1,4 +1,4 @@
 ---
 slug: iptables
-name: iptables
+name: IPtables
 ---
