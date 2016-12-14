@@ -20,7 +20,7 @@ Projects:
    - [spatial.election](/tag/spatial-election/)
    - [isdriven](/tag/isdriven/)
  - Docker
-   - [load-postgis](/tag/load-postgis/)
+   - [load-postgis](/weblog/2016/12/06/docker-load-postgis/)
    - [openttd](/weblog/2016/12/03/docker-openttd/)
    - docker-groupware
      - [docker-groupware-domain](/tag/domain/)
