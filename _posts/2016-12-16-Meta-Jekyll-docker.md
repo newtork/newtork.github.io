@@ -13,16 +13,19 @@ Since I often find myself working on a Windows machine, it would be quite troubl
 <!--more-->
 
 Pull the container:
+
 ```
 docker pull jekyll/jekyll:pages
 ```
 
 Run it with a mount to your local blog:
+
 ```
 docker run --rm --volume=/local/blog:/srv/jekyll -it -p 4000:4000 jekyll/jekyll:pages
 ```
 
 Run it with automatic file updates:
+
 ```
 docker run --rm --volume=/local/blog:/srv/jekyll -it -p 4000:4000 jekyll/jekyll:pages jekyll serve --incremental --watch --force_polling
 ```
