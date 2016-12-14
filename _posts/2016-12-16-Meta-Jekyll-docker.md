@@ -5,7 +5,7 @@ modified: 2016-12-16 08:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/16/jekyll-docker/
 categories: blog
-tags: blog meta jekyll
+tags: blog meta jekyll docker
 ---
 
 Since I often find myself working on a Windows machine, it would be quite troublesome to run a dedicated ruby environment for Jekyll and its dependencies. That's why when editing my blog I'm happy to use the official [Jekyll][jekylldocker] docker build.

@@ -308,7 +308,7 @@ Description:
 ### *Posts by category* layout
 Create a new layout file `/_layouts/posts_by_category.html` for a post listing of a single category.
 
-```{% raw %}
+```html{% raw %}
 ---
 layout: default
 ---
@@ -354,7 +354,7 @@ Description:
 
 To have your *post* pages use the new *category* and *tag* feature, you have to edit the `/_layouts/post.html` and add the following lines according to your presets:
 
-```{% raw %}
+```html{% raw %}
 <p class="post-meta">
 	{% assign categories = page.categories %}
 	{% include categorylist.html %}
