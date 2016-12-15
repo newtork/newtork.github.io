@@ -39,9 +39,9 @@ First of all, feel free to look at the [showcase][deafflow].
 
 ### Usage
 
-1) Download the [theme files][paperflow] from GitHub to your local `/wordpress/wp-content/themes/`*paperflow* path and activate it.
-2) Create a WordPress category `paperflow` and add sub categories with descriptions e.g. `crew`, `cargo`, `cruise`. They will appear as booklet bookmarks.
-3) Move or create WordPress posts to the sub categories. When editing a post, take note of the meta fields at the bottom. Here you can change placement and dimension of the post and featured image.
+1. Download the [theme files][paperflow] from GitHub to your local `/wordpress/wp-content/themes/`*paperflow* path and activate it.
+2. Create a WordPress category `paperflow` and add sub categories with descriptions e.g. `crew`, `cargo`, `cruise`. They will appear as booklet bookmarks.
+3. Move or create WordPress posts to the sub categories. When editing a post, take note of the meta fields at the bottom. Here you can change placement and dimension of the post and featured image.
 
 
 {% include tags/hint-start.html %}
