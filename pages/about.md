@@ -7,22 +7,30 @@ Hi, I'm Alexander Dümont and I studied computer science in Berlin, Germany. I'v
 
 A couple of months ago I started working with Docker. I found it to be a great opportunity to conveniently experiment with service tool chains and server infrastructure in a private environment. And recently I touched the field of GPGPU programming, in hopes to accelerate number crunching tasks.
 
-Projects:
 
- - [HowTo](/tag/howto/)s
+# Projects 
+
+## Online
+
+ - [spatial.election](/tag/spatial-election/)
+ - [isdriven](/tag/isdriven/)
+
+## Howtos
+
+ - [HowTo](/tag/howto/)s in this weblog
    - [Blog](/tag/blog/)
    - [Fail2Ban](/tag/fail2ban/)
- - Website Templates
-   - [Simple Page](/tag/simplepage/)
-   - [Paper Page](/tag/paperpage/)
-     - [Paper Flow](/tag/paperflow/)
- - Online projects
-   - [spatial.election](/tag/spatial-election/)
-   - [isdriven](/tag/isdriven/)
- - Docker
-   - [load-postgis](/weblog/2016/12/06/docker-load-postgis/)
-   - [openttd](/weblog/2016/12/03/docker-openttd/)
-   - docker-groupware
-     - [docker-groupware-domain](/tag/domain/)
-     - [docker-groupware-owncloud](/tag/owncloud/)
-     - [docker-groupware-moodle](/tag/moodle/)
+
+## Website Templates
+ - [Simple Page](/tag/simplepage/)
+ - [Paper Page](/tag/paperpage/)
+   - [Paper Flow](/tag/paperflow/)
+
+## Docker
+
+ - [load-postgis](/weblog/2016/12/06/docker-load-postgis/)
+ - [openttd](/weblog/2016/12/03/docker-openttd/)
+ - docker-groupware
+   - [docker-groupware-domain](/tag/domain/)
+   - [docker-groupware-owncloud](/tag/owncloud/)
+   - [docker-groupware-moodle](/tag/moodle/)

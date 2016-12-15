@@ -58,20 +58,26 @@ This private software project [IsDriven][isdriven] was created by:
  - Karl Fischer (Development, Full Stack, Operation)
 
 
-Back when we started developing, we used `SVN` for version control, `Trac` for documentation, `Struts2` as backend framework under `Java` programming language run in a `Tomcat` application server. We used `H2` as a database service, connected via a `JDBC` driver to the `Hibernate` Entity-Relation-Mapper framework. To manage source code, we applied `Maven`, for blogs and articles it was `WordPress`. Next to the webside, we implemented a web application for administration. The administration software might be publicly released later in a simplified, abstract version.
+
+{% include tags/hint-start.html %}
+Back when we started developing, we used `SVN` for version control, `Trac` for documentation, `Struts2` as backend framework under `Java` programming language run in a `Tomcat` application server. We used `H2` as a database service, connected via a `JDBC` driver to the `Hibernate` Entity-Relation-Mapper framework. To manage source code, we applied `Maven`, for blogs and articles it was `WordPress`.
+{% include tags/hint-end.html %}
+
+Next to the webside, we implemented a web application for administration purposes. This administration software might be publicly released later in a simplified, abstract version.
 
 
-[screen-calc]: ../content-images/isdriven-calc0.jpg
-[screen-comps]: ../content-images/isdriven-comps0.jpg
-[screen-map-a]: ../content-images/isdriven-screenshot-map1.jpg
-[screen-map-a-link]: ../content-images/isdriven-screenshot-map0.jpg
-[screen-map-b]: ../content-images/isdriven-screenshot-map3.jpg
-[screen-map-b-link]: ../content-images/isdriven-screenshot-map2.jpg
-[screen-start]: ../content-images/isdriven-screenshot-intro1.jpg
-[screen-start-link]: ../content-images/isdriven-screenshot-intro0.jpg
-[screen-rank]: ../content-images/isdriven-screenshot-rank1.jpg
-[screen-rank-link]:  ../content-images/isdriven-screenshot-rank0.jpg
-[screen-intro]: ../content-images/isdriven-screenshot-intro1.jpg
-[screen-intro-link]: ../content-images/isdriven-screenshot-intro0.jpg
+
+[screen-calc]: /content-images/isdriven-calc0.jpg
+[screen-comps]: /content-images/isdriven-comps0.jpg
+[screen-map-a]: /content-images/isdriven-screenshot-map1.jpg
+[screen-map-a-link]: /content-images/isdriven-screenshot-map0.jpg
+[screen-map-b]: /content-images/isdriven-screenshot-map3.jpg
+[screen-map-b-link]: /content-images/isdriven-screenshot-map2.jpg
+[screen-start]: /content-images/isdriven-screenshot-intro1.jpg
+[screen-start-link]: /content-images/isdriven-screenshot-intro0.jpg
+[screen-rank]: /content-images/isdriven-screenshot-rank1.jpg
+[screen-rank-link]:  /content-images/isdriven-screenshot-rank0.jpg
+[screen-intro]: /content-images/isdriven-screenshot-intro1.jpg
+[screen-intro-link]: /content-images/isdriven-screenshot-intro0.jpg
 [isdriven]: http://isdriven.com
 [osm]: https://www.openstreetmap.org/
