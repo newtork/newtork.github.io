@@ -1,5 +1,5 @@
 ---
-title:  "Old: spatial.election will return in 2017"
+title:  "Revisited: spatial.election will return in 2017"
 date:   2016-12-02 07:00:00 +0000
 modified: 2016-12-02 07:00:00 +0000 
 comments: true
@@ -20,17 +20,17 @@ I have used the opportunity to upload my project again to a live environment. Ev
 
 Unfortunately it is currently not possible to run the *WAR* file on the latest [Tomcat][tomcat] server. But thanks to the jetty runtime environment, the newly compiled, portable version is still good to go. Hopefully I'm going to find a little time during the upcoming months to refurbish the project: the visuals, load time and resource consumption are subpar.
 
-### Documentation ###
+### Documentation
 
 The last time I touched the project, was to compose a [Wiki documentation][wiki].
 
-### Details ###
+### Details
 
  - Java project, made with Eclipse
  - PostgreSQL database with PostGIS extension
  
  
-### Extended database installation instructions ###
+### Extended database installation instructions
 
 1\. Download and install dependencies.
 
