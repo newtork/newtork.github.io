@@ -73,8 +73,8 @@ Next to the webside, we implemented a web application for administration purpose
 [screen-map-a-link]: /content-images/isdriven-screenshot-map0.jpg
 [screen-map-b]: /content-images/isdriven-screenshot-map3.jpg
 [screen-map-b-link]: /content-images/isdriven-screenshot-map2.jpg
-[screen-start]: /content-images/isdriven-screenshot-intro1.jpg
-[screen-start-link]: /content-images/isdriven-screenshot-intro0.jpg
+[screen-start]: /content-images/isdriven-screenshot-start1.jpg
+[screen-start-link]: /content-images/isdriven-screenshot-start0.jpg
 [screen-rank]: /content-images/isdriven-screenshot-rank1.jpg
 [screen-rank-link]:  /content-images/isdriven-screenshot-rank0.jpg
 [screen-intro]: /content-images/isdriven-screenshot-intro1.jpg
