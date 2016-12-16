@@ -29,6 +29,14 @@ body {
 	position:relative;
 }
 
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5 {
+	margin-top:1.5em;
+}
+
+
 /*
  * comments
  */
@@ -73,3 +81,5 @@ body {
 .post-meta span {
 	display:inline-block;
 }
+
+
