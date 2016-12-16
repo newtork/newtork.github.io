@@ -1,11 +1,11 @@
 ---
-title:  "HowTo: easy firewall configuration with iptables"
+title:  "Snippet: easy firewall configuration with iptables"
 date:   2016-12-11 07:00:00 +0000
 modified: 2016-12-11 07:00:00 +0000 
 comments: true
-permalink: /weblog/2016/12/11/howto-easy-firewall-configuration-with-iptables/
-categories: howto
-tags: linux bash firewall iptables
+permalink: /weblog/2016/12/11/snippet-easy-firewall-configuration-with-iptables/
+categories: snippet
+tags: linux bash firewall iptables snippet
 ---
 
 Since Debian, the distribution I feel home at the most, unfortunately has weak capabilities to manage iptables by default, I found the following script to be very useful. It runs at startup, is easily editable and can be extended without much effort.

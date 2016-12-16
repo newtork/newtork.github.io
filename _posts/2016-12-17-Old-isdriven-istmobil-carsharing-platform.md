@@ -60,7 +60,7 @@ This private software project [IsDriven][isdriven] was created by:
 
 
 {% include tags/hint-start.html %}
-Back when we started developing, we used `SVN` for version control, `Trac` for documentation, `Struts2` as backend framework under `Java` programming language run in a `Tomcat` application server. We used `H2` as a database service, connected via a `JDBC` driver to the `Hibernate` Entity-Relation-Mapper framework. To manage source code, we applied `Maven`, for blogs and articles it was `WordPress`.
+Back when we started developing, we used `SVN` for version control, `Trac` for documentation, `Struts2` as backend framework under `Java` programming language run in a `Tomcat` application server. We used `H2` as a database service, connected via a `JDBC` driver to the `Hibernate` Entity-Relationship-Model mapper framework. To manage source code, we applied `Maven`, for blogs and articles it was `WordPress`.
 {% include tags/hint-end.html %}
 
 Next to the webside, we implemented a web application for administration purposes. This administration software might be publicly released later in a simplified, abstract version.

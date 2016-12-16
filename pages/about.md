@@ -8,25 +8,25 @@ Hi, I'm Alexander Dümont and I studied computer science in Berlin, Germany. I'v
 A couple of months ago I started working with Docker. I found it to be a great opportunity to conveniently experiment with service tool chains and server infrastructure in a private environment. And recently I touched the field of GPGPU programming, in hopes to accelerate number crunching tasks.
 
 
-# Projects 
+## Projects 
 
-## Online
+### Online
 
- - [spatial.election](/tag/spatial-election/)
  - [isdriven](/tag/isdriven/)
+ - [spatial.election](/tag/spatial-election/)
 
-## Howtos
+### Howtos
 
  - [HowTo](/tag/howto/)s in this weblog
    - [Blog](/tag/blog/)
    - [Fail2Ban](/tag/fail2ban/)
 
-## Website Templates
+### Website Templates
  - [Simple Page](/tag/simplepage/)
  - [Paper Page](/tag/paperpage/)
    - [Paper Flow](/tag/paperflow/)
 
-## Docker
+### Docker
 
  - [load-postgis](/weblog/2016/12/06/docker-load-postgis/)
  - [openttd](/weblog/2016/12/03/docker-openttd/)

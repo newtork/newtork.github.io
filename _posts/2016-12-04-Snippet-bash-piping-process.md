@@ -1,11 +1,11 @@
 ---
-title:  "HowTo: Piping a process I/O with Bash"
+title:  "Snippet: Piping a process I/O with Bash"
 date:   2016-12-04 07:00:00 +0000
 modified: 2016-12-04 07:00:00 +0000 
 comments: true
-permalink: /weblog/2016/12/04/howto-bash-piping-process/
-categories: howto
-tags: howto bash
+permalink: /weblog/2016/12/04/snippet-bash-piping-process/
+categories: snippet
+tags: howto bash snippet
 ---
 
 While I worked on my [OpenTTD container][dockerottd], I came to the challenge of wrapping a process for initial and final input and output, and temporarily guarding it from interrupt signals. This is my solution.

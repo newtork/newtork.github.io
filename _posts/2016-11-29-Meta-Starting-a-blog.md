@@ -12,7 +12,7 @@ tags: meta jekyll github blog
 
 <!--more-->
 
-### Jekyll and GitHub ###
+### Jekyll and GitHub
 
 The blog is powered by [Jekyll][jekyll] and [GitHub][github] Pages. This combination conveniently leads to:
 
@@ -33,7 +33,7 @@ Feel free to try it yourself. Simply create a public repository "*USERNAME*.gith
 {% include tags/hint-end.html %}
 
 
-[fish]: https://fishi.devtail.com/
+[fish]: http://fishi.devtail.com/
 [github]: https://github.com/
 [jekyll]: https://jekyllrb.com/
 [markdown]: https://guides.github.com/features/mastering-markdown/

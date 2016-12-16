@@ -54,7 +54,7 @@ defaults:
 # Site settings
 title: Alexander Dümont
 email: alexander_duemont@web.de
-description: "Personal solutions to smaller programming problems."
+description: "Personal solutions to programming problems. Descriptions, updates and promo to my projects."
 baseurl: "" 
 url: "http://blog.newtork.de" 
 headline: "Newtork"
