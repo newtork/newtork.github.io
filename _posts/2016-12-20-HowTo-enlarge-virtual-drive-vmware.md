@@ -55,7 +55,7 @@ umount /dev/sdb1
 
 1. Copy all data from **small sdb1** to **big sdc1**. You do not want to mix up the identifiers, so check everything twice.
 
- ```
+```
 dd if=/dev/sdb1 of=/dev/sdc1 bs=10M &
 ddpid=$!
 while [ $(ps -ao pid | grep $ddpid) ]; do kill -SIGUSR1 $ddpid; sleep 5; done
@@ -71,25 +71,25 @@ while [ $(ps -ao pid | grep $ddpid) ]; do kill -SIGUSR1 $ddpid; sleep 5; done
 
 * Fix UUID of `sdc1` by create a new random one:
 
- ```bash
+```bash
 tune2fs /dev/sdc1 -U random
 ```
 
 * Check the file system of `sdc1`
 
- ```bash
+```bash
 e2fsck -f /dev/sdc1
 ```
 
 * Expand `sdc1` file system to the correct size.
 
- ```bash
+```bash
 resize2fs /dev/sdc1
 ```
 
 * Mount the new partition to `/mnt/sdc1/` (or your old mount location) and list the drive overview.
 
- ````bash
+```bash
 mkdir /mnt/sdc1
 mount /dev/sdc1 /mnt/sdc1
 df -h
@@ -98,13 +98,13 @@ df -h
 * If everything looks good, start the the services you stopped or sent to maintenance mode earlier.
 * Fix *fstab* to add the missing partition, in order for it to startup during boot routine, use the UUID previously generated. Don't forget to remove / disable the entry for the old partition `/dev/sdb1`.
 
- ```
+```
 vi /etc/fstab
 ```
 
 * (If you want to test and reboot)
 
- ```
+```
 reboot
 ```
 
