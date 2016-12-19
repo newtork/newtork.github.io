@@ -36,6 +36,21 @@ body {
 	margin-top:1.5em;
 }
 
+.page-content .post-content div.hint {
+	background: url(/content-images/note-bulb.png) no-repeat scroll left center transparent;
+	color: black;
+	padding: 10px 10px 10px 35px;
+	margin: 1.5em 0;
+	background-color: #F2F2F2;
+	border:1px solid grey;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.page-content .post-content div.hint:hover {
+	background-image:url(/content-images/note-bulb-lid.png);
+}
 
 /*
  * comments

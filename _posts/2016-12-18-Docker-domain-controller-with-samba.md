@@ -9,7 +9,7 @@ categories: project
 tags: docker project windows domain groupware
 ---
 
-I worked some time in a company environment traditionally build around Microsoft's *Active Directory* and I liked the user and group management, even the administration of their privilege setttings. We ran several virtual *Debian* machines to host webservices, which authenticated their users via *LDAP* and *Kerberos*. Luckily as developers, we do not need to purchase any Microsoft product for building or testing. All you'd need is a *Domain Controller* docker image.
+I worked some time in a company environment traditionally build around Microsoft's *Active Directory* and I liked the user and group management, even the administration of their privilege setttings. We ran several virtual *Debian* machines to host webservices, which authenticated their users via *LDAP* and *Kerberos*. Luckily as developers, we do not need to purchase any Microsoft product for building or testing. All you need is a *Domain Controller* docker image.
 
 
 <!--more-->
@@ -23,13 +23,13 @@ Docker containers are not meant to host such critical company infrastructure! Co
 {% include tags/hint-end.html %}
 
 
-Download it either from [DockerHub][dockerhub]...
+Anyways, if you want to give this image a try, download it either from [DockerHub][dockerhub]...
 
 ```
 docker pull newtork/groupware-domain
 ```
 
-... or download it from [GitHub][github-domain] and build it yourself
+... or download it from [GitHub][github-domain] and build it yourself:
 
 ```
 docker build -t newtork/groupware-domain .
@@ -73,8 +73,6 @@ When testing different domain setups, I would recommend cleaning your working di
 
 
 
-### Simple
-
 To get started, let's do a test run. We can start it up without additional paramters. The following command will create a *domain* from the build's defaults:
 
 ```
@@ -84,7 +82,7 @@ docker run --cap-add SYS_ADMIN --volume /var/domain:/data --rm -it newtork/group
 Explanation:
 
  - Unfortunately the container needs `SYS_ADMIN` capabilities to run the *Samba* domain provisioning with *extended attributes*. While xattr features by themselves are working fine even without elevated privileges, there seems to be a dependency for users and file ownership, which make `SYS_ADMIN` a requirement.
- - If you want to skip the `SYS_ADMIN` requirement you'd need to give up on the *extended attributes*, which would be unfortunate, but still possible:
+ - If you want to **skip** the `SYS_ADMIN` requirement you would need to give up on the *extended attributes*, which would be unfortunate and not recommended, but still possible.
 
 ```
 docker run --volume /var/domain:/data --rm -it newtork/groupware-domain --no-xattr
@@ -101,13 +99,13 @@ docker run --rm -it newtork/groupware-domain --help
 As you can see, most options are also configurable as arguments during `docker run`. To get a better idea of possible startup configurations, you can run the interactive mode, which guides you through everything:
 
 ```
-docker run --rm -it newtork/groupware-domain --interactive
+docker run --volume /var/domain:/data --rm -it newtork/groupware-domain --interactive
 ```
 
 
 ### Example
 
-There are some port forwardings, which need to be set in order get a functioning *domain controller*.
+There are some port forwardings, which need to be set in order get a functioning *domain controller* on your local host.
 
 ```
 docker run \
@@ -156,7 +154,7 @@ This is the port usage for *Samba`s active directory*:
 
 
 {% include tags/hint-start.html %}
-Find more feature by following the tags above... [(groupware)][more]. There are some interesting topics like *domain replication* on *secondary domain controller*, *smb shares*, *LDAP usage* and more!
+Find more feature by following the tags above, e.g. [groupware][more]. There are some interesting topics like *domain replication* on *secondary domain controller*, user *smb shares*, service *LDAP usage* and more! Also please mind the *Docker Compositions* provided.
 {% include tags/hint-end.html %}
 
 
