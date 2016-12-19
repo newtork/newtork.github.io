@@ -80,11 +80,13 @@ resize2fs /dev/sdc1
 1. Mount the new partition to `/mnt/sdc1/` (or your old mount location) and list the drive overview.
 
     ```bash
+    
     mkdir /mnt/sdc1
     
     mount /dev/sdc1 /mnt/sdc1
     
     df -h
+    
     ```
 
 1. If everything looks good, start the the services you stopped or sent to maintenance mode earlier.
