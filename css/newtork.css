@@ -51,6 +51,7 @@ body {
 }
 
 .page-content .post-content li > ul {
+    padding-top: 0.8em;
     padding-bottom: 0.8em;
 }
 
