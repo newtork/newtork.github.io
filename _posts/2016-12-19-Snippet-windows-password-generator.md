@@ -1,16 +1,27 @@
 ---
 title:  "Snippet: Windows password generator"
-date:   2016-12-16 07:00:00 +0000
-modified: 2016-12-16 07:00:00 +0000 
+date:   2016-12-19 07:00:00 +0000
+modified: 2016-12-19 07:00:00 +0000 
 comments: true
-permalink: /weblog/2016/12/16/snippet-windows-password-generator/
+permalink: /weblog/2016/12/19/snippet-windows-password-generator/
 categories: snippet
 tags: windows batch snippet security
 ---
 
+Once given the task to create about a hundred of (unsimilar) *Active Directory* users on a Windows domain controller, I needed a *batch* script to create random passwords to my clipboard. The constrains were clear: alphanumeric `[a-zA-Z0-9]` with minimum and maximum character count. A double-click is all that's needed for execution.
 
 
 <!--more-->
+
+In my case, I wanted an alphanumeric password with 10 characters *on a click*. The following script executes the `RandomString` command with the parameters set.
+
+ - `RandomPassword.bat`
+
+```
+@echo off
+RandomString 10 10 | clip
+```
+
 
 
  - `RandomString.bat`
@@ -60,10 +71,3 @@ SET /A RAND_NUM=%RANDOM% * (%2 - %1 + 1) / 32768 + %1
 goto:EOF
 ```
 
-
- - `RandomPassword.bat`
-
-```
-@echo off
-RandomString 8 8 | clip
-```

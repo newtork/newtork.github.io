@@ -5,7 +5,7 @@ modified: 2016-12-15 08:00:00 +0000
 comments: true
 permalink: /weblog/2016/12/15/jekyll-tags-categories/
 categories: blog howto
-tags: blog meta jekyll
+tags: blog meta jekyll howto
 ---
 
 Once a decent number of blog posts and pages on a single domain is reached, it becomes necessary to sort and categorize single posts. That way sequential articles can be written or information on a common topic be grouped. Since GitHub Pages do not support custom Jekyll plugins a little manual work is needed.

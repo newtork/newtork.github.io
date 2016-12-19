@@ -1,9 +1,9 @@
 ---
 title:  "HowTo: Enlarge a Virtual Drive on VMware vSphere"
-date:   2016-12-15 07:00:00 +0000
-modified: 2016-12-15 07:00:00 +0000 
+date:   2016-12-20 07:00:00 +0000
+modified: 2016-12-20 07:00:00 +0000 
 comments: true
-permalink: /weblog/2016/12/17/howto-enlarge-virtual-drive-vmware/
+permalink: /weblog/2016/12/20/howto-enlarge-virtual-drive-vmware/
 categories: howto
 tags: linux bash vmware howto
 ---
@@ -24,9 +24,13 @@ e2fsck -f /dev/sdb1
 resize2fs /dev/sdb1
 ```
 
+You should be good to go from now on.
+
+
 ### Manual changes
 
-If you are out of luck, the *virtual machine* or *virtual drive* does not support enlarging or shrinking. That's when you need to create a new *virtual drive* of custom size, copy the contents
+If you are out of luck, the *virtual machine* or *virtual drive* does not support enlarging or shrinking. The field is grayed out in this case. That's when you need to create a new *virtual drive* of custom (bigger) size, copy the data, remount and register it in the file system table.
+
 
 
 
