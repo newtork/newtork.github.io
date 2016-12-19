@@ -154,6 +154,7 @@ Default collections like `posts` and custom collections like `meta_tags` or `met
 ### Single tag
 
 To create a new accessible tag (e.g. *HTML*) - simply add a new file for each. Here is how it looks, `/_meta_tags/html.md`
+
 ```
 ---
 slug: html
