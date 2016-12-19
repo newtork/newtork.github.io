@@ -29,6 +29,11 @@ body {
 	position:relative;
 }
 
+
+/*
+ * additional margin to improve readability
+ */
+ 
 .page-content .post-content h2,
 .page-content .post-content h3,
 .page-content .post-content h4,
@@ -36,6 +41,23 @@ body {
 	margin-top:1.5em;
 }
 
+
+.page-content .post-content li {
+	margin-bottom:1em;
+}
+
+.page-content .post-content li > div {
+    margin-top: 0.8em;
+}
+
+.page-content .post-content li > ul {
+    padding-bottom: 0.8em;
+}
+
+/*
+ * hints
+ */
+ 
 .page-content .post-content div.hint {
 	background: url(/content-images/note-bulb.png) no-repeat scroll left center transparent;
 	color: black;

@@ -1,5 +1,5 @@
 ---
-title:  "Snippet: Windows password generator"
+title:  "Snippet: password generator on Windows"
 date:   2016-12-19 07:00:00 +0000
 modified: 2016-12-19 07:00:00 +0000 
 comments: true
@@ -15,7 +15,7 @@ Once given the task to create about a hundred of (unsimilar) *Active Directory* 
 
 In my case, I wanted an alphanumeric password with 10 characters *on a click*. The following script executes the `RandomString` command with the parameters set.
 
- - `RandomPassword.bat`
+Create `RandomPassword.bat`
 
 ```
 @echo off
@@ -24,7 +24,7 @@ RandomString 10 10 | clip
 
 
 
- - `RandomString.bat`
+Create `RandomString.bat`
 
 ```
 @echo off & setlocal EnableDelayedExpansion
