@@ -16,7 +16,7 @@ For a recently upgraded Java project ([spatial election][spatial.election]) I ne
 
 ### Java
 
- - First of all, let's check the currently installed version of Java in the execution path.
+1. First of all, let's check the currently installed version of Java in the execution path.
 
 {% assign shell-types = "user" %}
 {% include tags/shell-ind.html %}
@@ -25,7 +25,7 @@ java -version
 javac -version
 ```
 
- - If it is not giving the desired version, check the available binaries.
+1. If it is not giving the desired version, check the available binaries.
 
 {% assign shell-types = "user" %}
 {% include tags/shell-ind.html %}
@@ -33,7 +33,7 @@ javac -version
 ls -dl /usr/lib/jvm/java-*
 ```
 
- - If this is not listing the desired version to run, a manual download and installation of the required binary is needed, e.g. Oracle Java 8 for Debian/Ubuntu.
+1. If this is not listing the desired version to run, a manual download and installation of the required binary is needed, e.g. Oracle Java 8 for Debian/Ubuntu.
 
 
 {% assign shell-types = "root scroll" %}
@@ -51,12 +51,12 @@ Usually the repository packages hosted on the [Canonical launchpad platform][lau
 
 ### Tomcat
 
- - Check the active Java runtime environment on the Tomcat server manager status page: `http://localhost:8080/manager/status`
+1. Check the active Java runtime environment on the Tomcat server manager status page: `http://localhost:8080/manager/status`
 
 ![before][img-tom-old]
 ([zoom][img-tom-old-big])
 
- - If the displayed version does not suffice, the following changes are needed in `/etc/default/tomcat7` to set a different binary path.
+1. If the displayed version does not suffice, the following changes are needed in `/etc/default/tomcat7` to set a different binary path.
 
 {% assign shell-types = "root replace" %}
 {% include tags/shell-ind.html %}
@@ -66,7 +66,7 @@ vim /etc/default/tomcat7
 JAVA_HOME=/usr/lib/jvm/java-8-oracle
 ```
 
- - Restart the Tomcat server
+1. Restart the Tomcat server
 
 {% assign shell-types = "root" %}
 {% include tags/shell-ind.html %}
@@ -74,7 +74,7 @@ JAVA_HOME=/usr/lib/jvm/java-8-oracle
 service tomcat7 restart
 ```
 
- - A follow up check on the Tomcat server manager status page should finally yield the correct JVM version.
+1. A follow up check on the Tomcat server manager status page should finally yield the correct JVM version.
 
 ![after][img-tom-new]
 ([zoom][img-tom-new-big])

@@ -47,17 +47,17 @@ Usefull commands:
 
 #### How to migrate a partition:
 
-* Use `df -h` to list mounted locations. Take note of the location for `/dev/sdb1`. I will assume it is `/mnt/sdb1`. Keep in mind, your setup will likely differ.
-* If you have not yet created a partition `/dev/sdc1` on your new virtual drive, do so by using `fdisk /dev/sdc`.
-* *Stop* running services which depend on files of the partition mount, or send them to a *maintenance mode* if there is one. Make sure, there wont be any file access.
-* (To make sure, there will be nothing interacting with the old drive, just unmount it)
+1. Use `df -h` to list mounted locations. Take note of the location for `/dev/sdb1`. I will assume it is `/mnt/sdb1`. Keep in mind, your setup will likely differ.
+1. If you have not yet created a partition `/dev/sdc1` on your new virtual drive, do so by using `fdisk /dev/sdc`.
+1. *Stop* running services which depend on files of the partition mount, or send them to a *maintenance mode* if there is one. Make sure, there wont be any file access.
+1. (To make sure, there will be nothing interacting with the old drive, just unmount it)
 
 {% include tags/shell-ind.html %}
 ```
 umount /dev/sdb1
 ```
 
-* Copy all data from **small sdb1** to **big sdc1**. You do not want to mix up the identifiers, so check everything twice.
+1. Copy all data from **small sdb1** to **big sdc1**. You do not want to mix up the identifiers, so check everything twice.
    * the blocksize (`bs`) is adjustable
    * this shell starts the copying process from partition `sdb1` to partition `sdc1` as a background process. Its process identifier is saved as `$ddpid`, to which every 5 seconds a *SIGUSR1* signal is being sent. That signal tells a process to *softly* terminate by default. While it is copying `dd` will ignore the signal. This loops works until the process identified by `$ddpid` is finally terminated.
    * **Note:** sometimes `dd` will not shutdown after completion, just waiting for such a stop signal.
@@ -70,28 +70,28 @@ while [ $(ps -ao pid | grep $ddpid) ]; do kill -SIGUSR1 $ddpid; sleep 5; done
 ```
  
 
-* Fix UUID of `sdc1` by create a new random one:
+1. Fix UUID of `sdc1` by create a new random one:
 
 {% include tags/shell-ind.html %}
 ```bash
 tune2fs /dev/sdc1 -U random
 ```
 
-* Check the file system of `sdc1`
+1. Check the file system of `sdc1`
 
 {% include tags/shell-ind.html %}
 ```bash
 e2fsck -f /dev/sdc1
 ```
 
-* Expand `sdc1` file system to the correct size.
+1. Expand `sdc1` file system to the correct size.
 
 {% include tags/shell-ind.html %}
 ```bash
 resize2fs /dev/sdc1
 ```
 
-* Mount the new partition to `/mnt/sdc1/` (or your old mount location) and list the drive overview.
+1. Mount the new partition to `/mnt/sdc1/` (or your old mount location) and list the drive overview.
 
 {% include tags/shell-ind.html %}
 ```bash
@@ -100,15 +100,15 @@ mount /dev/sdc1 /mnt/sdc1
 df -h
 ```
 
-* If everything looks good, start the the services you stopped or sent to maintenance mode earlier.
-* Fix *fstab* to add the missing partition, in order for it to startup during boot routine, use the UUID previously generated. Don't forget to remove / disable the entry for the old partition `/dev/sdb1`.
+1. If everything looks good, start the the services you stopped or sent to maintenance mode earlier.
+1. Fix *fstab* to add the missing partition, in order for it to startup during boot routine, use the UUID previously generated. Don't forget to remove / disable the entry for the old partition `/dev/sdb1`.
 
 {% include tags/shell-ind.html %}
 ```
 vi /etc/fstab
 ```
 
-* (If you want to test and reboot)
+1. (If you want to test and reboot)
 
 {% include tags/shell-ind.html %}
 ```

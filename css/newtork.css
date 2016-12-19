@@ -122,7 +122,14 @@ body {
  */
  
 .page-content .post-content ul + div.highlighter-rouge,
-.page-content .post-content ul + section.shell + div.highlighter-rouge {
+.page-content .post-content ul + section.shell + div.highlighter-rouge,
+.page-content .post-content ol + div.highlighter-rouge,
+.page-content .post-content ol + section.shell + div.highlighter-rouge {
+	margin-left:2em;
+}
+
+.page-content .post-content ul + p > img,
+.page-content .post-content ol + p > img {
 	margin-left:2em;
 }
 
@@ -232,5 +239,28 @@ body {
 	display:inline-block;
 }
 
-
+/*
+ * custom enumeration
+ */
+.page-content .post-content h1,
+.page-content .post-content h2,
+.page-content .post-content h3,
+.page-content .post-content h4,
+.page-content .post-content h5 {
+	counter-reset: listcount;
+}
+.page-content .post-content ol {
+	list-style-type: none;
+	position:relative;	
+}
+.page-content .post-content ol > li {
+}
+.page-content .post-content ol > li:before {
+    counter-increment: listcount;
+    content: counter(listcount) ".";
+    position: absolute;
+    left: -2.6em;
+    text-align: right;
+    width: 2em;
+}
 
