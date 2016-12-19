@@ -46,7 +46,7 @@ createdb spatial_election --username=postgres --encoding=UNICODE
 psql spatial_election -U postgres -c "CREATE EXTENSION postgis; CREATE EXTENSION postgis_topology;"
 ```
 
-3\. Set passsword for postgres.
+3\. Set password for postgres.
 
 ```
 psql -U postgres -c "\password"

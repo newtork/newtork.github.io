@@ -19,7 +19,7 @@ The blog is powered by [Jekyll][jekyll] and [GitHub][github] Pages. This combina
  - less administrative workload
  - no dedicated infrastructure
  - free distribution via GitHub CDN
- - configuration and content with textfiles
+ - configuration and content with text files
  - [Markdown][markdown] support by default
 
 Unfortunately there is:

@@ -8,7 +8,7 @@ categories: project
 tags: project docker bash
 ---
 
-My first steps with docker have been quite exciting. I decided to create a container to easily run an [OpenTTD][dockerottd] gameserver. This build comes with some neat little features, to stick out from conventional OpenTTD Docker containers.
+My first steps with docker have been quite exciting. I decided to create a container to easily run an [OpenTTD][dockerottd] game server. This build comes with some neat little features, to stick out from conventional OpenTTD Docker containers.
 
 <!--more-->
 
@@ -16,10 +16,10 @@ My first steps with docker have been quite exciting. I decided to create a conta
 
  - During **build** the container automatically downloads the latest stable version of [OpenTTD][openttd] and additionally the required asset files.
    - Files which have been downloaded are being verified by their checksum.
-   - A default gameserver configuration file can be attached to the build.
+   - A default game server configuration file can be attached to the build.
    
- - During **run** the containers's shell script tunnels the gameservers I/O.
-   - You can use the gameserver commands, like saving, loading, announcements, pausing, restarting, ...
+ - During **run** the container's shell script tunnels the game server's I/O.
+   - You can use the game server commands, like saving, loading, announcements, pausing, restarting, ...
    - Save-game names and additional runtime configurations can be set when starting the container, to load automatically.
    - On container termination the game will be saved.
 

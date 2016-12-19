@@ -14,7 +14,7 @@ I'd like to introduce a little container I created, [load-postgis][load-postgis]
 
 The easiest way to manage data from [geographic information systems][gis] is to keep them in databases, specially designed to compute geometries, coordinates and graphs. A good choice is [PostGIS][postgis], a spatial database extension for PostgreSQL, which combined makes an outstanding system regarding performance, features and code quality.
 
-Recently I started to revisit [an GIS university project][spatial] which I've worked on some years ago. To tidy up the development environment I've decided containerize the database. That way I'm no longer limited to my local machine and operation system, when working on the project.
+Recently I started to revisit [a GIS university project][spatial] which I've worked on some years ago. To tidy up the development environment I've decided containerize the database. That way I'm no longer limited to my local machine and operation system, when working on the project.
 
 
 ## Usage

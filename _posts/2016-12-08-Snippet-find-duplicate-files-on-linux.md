@@ -8,7 +8,7 @@ categories: snippet
 tags: howto linux bash snippet
 ---
 
-Once in a while a client comes by and asks for help with their duplicate files on the cloud storage platform. This happens especially often, when users manage their backups on their own without proper introduction or training. Then you'll face files over files, scattered everywhere on the clients storage, with uncertain timestamps and no meaningful user logs. That's when the following shell script might come in handy.
+Once in a while a client comes by and asks for help with their duplicate files on the cloud storage platform. This happens especially often, when users manage their backups on their own without proper introduction or training. Then you'll face files over files, scattered everywhere on the client's storage, with uncertain timestamps and no meaningful user logs. That's when the following shell script might come in handy.
 
 <!--more-->
 
