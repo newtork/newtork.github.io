@@ -79,15 +79,9 @@ resize2fs /dev/sdc1
 ```
 1. Mount the new partition to `/mnt/sdc1/` (or your old mount location) and list the drive overview.
 
-    ```bash
-    
-    mkdir /mnt/sdc1
-    
+    ```mkdir /mnt/sdc1
     mount /dev/sdc1 /mnt/sdc1
-    
-    df -h
-    
-    ```
+    df -h```
 
 1. If everything looks good, start the the services you stopped or sent to maintenance mode earlier.
 1. Fix *fstab* to add the missing partition, in order for it to startup during boot routine, use the UUID previously generated. Don't forget to remove / disable the entry for the old partition `/dev/sdb1`.
