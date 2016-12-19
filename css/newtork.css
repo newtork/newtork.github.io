@@ -29,10 +29,10 @@ body {
 	position:relative;
 }
 
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5 {
+.page-content .post-content h2,
+.page-content .post-content h3,
+.page-content .post-content h4,
+.page-content .post-content h5 {
 	margin-top:1.5em;
 }
 
@@ -57,20 +57,20 @@ body {
  * special table definition
  */
 
-.post-content table {
+.page-content .post-content table {
 	margin: 2em 0px;
     border: 1px solid #ccc;
     font-size: 0.8em;
 }
-.post-content table th {
+.page-content .post-content table th {
     border-bottom: 1px solid #ccc;
 }
 
-.post-content span[title] {
+.page-content .post-content span[title] {
 	border-bottom: 1px dotted #555;
     line-height: 1em;
 }
-.post-content span[title]:hover {
+.page-content .post-content span[title]:hover {
 	border-bottom: 1px solid #555;
 }
 
@@ -78,7 +78,7 @@ body {
  * tag cloud
  */
  
-.post-meta span {
+.page-content .post-meta span {
 	display:inline-block;
 }
 

@@ -17,10 +17,10 @@ I worked some time in a company environment traditionally build around Microsoft
 As I needed to configure different content management systems, cloud storage, webspace and groupware solutions, I wanted them to use the same *Active Directory* connection, which could be served from a classic Microsoft domain controller. But here is an interesting, yet unstable, alternative: [Samba][samba] + [Bind9][bind9] can be integrated and serve as Active Directory with DNS server. This is useful when testing authentication on various software. In my [groupware collection][github-main] you will find the new [Domain Controller docker image][github-domain]. You can download it from [Docker Hub][dockerhub].
 
 
-<-hint-->
-Docker containers are not meant to host such critical company infrastructure! Consider this docker setup ignored and always use at least **one dedicated server** when building a *Domain Controller* in production.
-<-hint-->
 
+{% include tags/hint-start.html %}
+Docker containers are not meant to host such critical company infrastructure! Consider this docker setup ignored and always use at least **one dedicated server** when building a *Domain Controller* in production.
+{% include tags/hint-end.html %}
 
 
 Download it either from [DockerHub][dockerhub]...
@@ -41,7 +41,7 @@ docker build -t newtork/groupware-domain .
 
 Let's first face the constraints for Samba4 Active Directory:
 
- - partition filesystem with support for ACL / extended attributes.
+ - partition filesystem with support for ACL and extended attributes.
  - propagation between two instances is not possible out of the box.
 
 These issues significantly increase the complexity of this docker build.
@@ -50,7 +50,7 @@ These issues significantly increase the complexity of this docker build.
 
 To run this docker you will need to
 
- 1. have a dedicated partition or path on your host machine, which will later keep all *Active Directory* data. We are talking about a hundred `MB` or so. Use `fdisk` in case you want to create a new partition.
+ 1. have a dedicated partition or path on your host machine, which will later keep all *Active Directory* data. We are talking about a *hundred MB* or so. Use `fdisk` in case you want to create a new partition.
  1. make sure, this dedicated partition or path supports ACL / xattr. If not, format it with *EXT4* with `mkfs.ext4`, this will have both options activated by default.
 
 To check *ACL* / *xattr* support on your local partition (e.g. `sda1` with `ext4`), use the following command:
@@ -78,12 +78,7 @@ When testing different domain setups, I would recommend cleaning your working di
 To get started, let's do a test run. We can start it up without additional paramters. The following command will create a *domain* from the build's defaults:
 
 ```
-docker run \
---cap-add SYS_ADMIN \
---volume /var/domain:/data \
---rm \
--it \
-newtork/groupware-domain
+docker run --cap-add SYS_ADMIN --volume /var/domain:/data --rm -it newtork/groupware-domain
 ```
 
 Explanation:
@@ -92,12 +87,7 @@ Explanation:
  - If you want to skip the `SYS_ADMIN` requirement you'd need to give up on the *extended attributes*, which would be unfortunate, but still possible:
 
 ```
-docker run \
---volume /var/domain:/data \
---rm \
--it \
-newtork/groupware-domain \
---no-xattr
+docker run --volume /var/domain:/data --rm -it newtork/groupware-domain --no-xattr
 ```
 
 ### Help
@@ -105,21 +95,13 @@ newtork/groupware-domain \
 To view a full set of arguments, see the `help`:
 
 ```
-docker run \
---rm \
--it \
-newtork/groupware-domain \
---help
+docker run --rm -it newtork/groupware-domain --help
 ```
 
 As you can see, most options are also configurable as arguments during `docker run`. To get a better idea of possible startup configurations, you can run the interactive mode, which guides you through everything:
 
 ```
-docker run \
---rm \
--it \
-newtork/groupware-domain \
---interactive
+docker run --rm -it newtork/groupware-domain --interactive
 ```
 
 
@@ -172,9 +154,11 @@ This is the port usage for *Samba`s active directory*:
 | Global Cataloge SSL | 3269 | tcp |
 
 
-<-hint-->
-Find more feature by following the tags above... [groupware][more]. There are some interesting topics like *domain replication* on *secondary domain controller*, *smb shares*, *LDAP usage* and more!
-<-hint-->
+
+{% include tags/hint-start.html %}
+Find more feature by following the tags above... [(groupware)][more]. There are some interesting topics like *domain replication* on *secondary domain controller*, *smb shares*, *LDAP usage* and more!
+{% include tags/hint-end.html %}
+
 
 
 [bind9]: https://wiki.debian.org/Bind9
