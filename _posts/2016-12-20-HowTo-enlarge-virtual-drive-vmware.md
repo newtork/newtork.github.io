@@ -53,20 +53,16 @@ Usefull commands:
 umount /dev/sdb1
 ```
 
-1. Copy all data from **small sdb1** to **big sdc1**. You do not want to mix up the identifiers, so check everything twice.
+* Copy all data from **small sdb1** to **big sdc1**. You do not want to mix up the identifiers, so check everything twice.
+   * the blocksize (`bs`) is adjustable
+   * this shell starts the copying process from partition `sdb1` to partition `sdc1` as a background process. Its process identifier is saved as `$ddpid`, to which every 5 seconds a *SIGUSR1* signal is being sent. That signal tells a process to *softly* terminate by default. While it is copying `dd` will ignore the signal. This loops works until the process identified by `$ddpid` is finally terminated.
+   * **Note:** sometimes `dd` will not shutdown after completion, just waiting for such a stop signal.
 
 ```
 dd if=/dev/sdb1 of=/dev/sdc1 bs=10M &
 ddpid=$!
 while [ $(ps -ao pid | grep $ddpid) ]; do kill -SIGUSR1 $ddpid; sleep 5; done
 ```
-
-	Explanation:
-	 - the blocksize (`bs`) is adjustable
-	 - this shell starts the copying process from partition `sdb1` to partition `sdc1` as a background process. Its process identifier is saved as `$ddpid`, to which every 5 seconds a *SIGUSR1* signal is being sent. That signal tells a process to *softly* terminate by default. While it is copying `dd` will ignore the signal. This loops works until the process identified by `$ddpid` is finally terminated.
-	 - **Note:** sometimes `dd` will not shutdown after completion, just waiting for such a stop signal.
-
-
  
 
 * Fix UUID of `sdc1` by create a new random one:
