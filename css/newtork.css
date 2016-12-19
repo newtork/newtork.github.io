@@ -29,6 +29,10 @@ body {
 	position:relative;
 }
 
+.page-content .post-content code.highlighter-rouge {
+	white-space: nowrap;
+}
+
 
 /*
  * additional margin to improve readability
