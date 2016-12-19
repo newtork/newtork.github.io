@@ -116,12 +116,121 @@ body {
 	border-bottom: 1px solid #555;
 }
 
+
 /*
- * tag cloud
+ * custom code
+ */
+ 
+.page-content .post-content ul + div.highlighter-rouge,
+.page-content .post-content ul + section.shell + div.highlighter-rouge {
+	margin-left:2em;
+}
+
+.page-content .post-content section.shell + div.highlighter-rouge {
+	position:relative;
+}
+.page-content .post-content section.shell + div.highlighter-rouge:hover:before {
+	opacity: 1;
+}
+.page-content .post-content section.shell + div.highlighter-rouge > .highlight {
+	border-color:#ccc;
+}
+
+
+.page-content .post-content section.shell + div.highlighter-rouge:before {
+    content: '';
+    display: block;
+    float: left;
+    width: 1.5em;
+    margin: 1px 0;
+    font-size: 15px;
+    font-family: monospace;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background-position: left top;
+    outline: 1px solid #ccc;
+    opacity: 0.5;
+    border: 0.55em solid #f4f4f4;
+    border-left-width: 0;
+    border-right-width: 0;
+	background-color: #f4f4f4;
+}
+
+
+.page-content .post-content section.shell + div.highlighter-rouge > pre.highlight {
+	padding: 0.5em 0.7em;
+	margin-left: 1.5em;
+}
+
+
+.page-content .post-content section.shell.notequal + div.highlighter-rouge:before,
+.page-content .post-content section.shell.equal + div.highlighter-rouge:before,
+.page-content .post-content section.shell.output + div.highlighter-rouge:before ,
+.page-content .post-content section.shell.input + div.highlighter-rouge:before,
+.page-content .post-content section.shell.add + div.highlighter-rouge:before,
+.page-content .post-content section.shell.remove + div.highlighter-rouge:before {
+	background-repeat: no-repeat;
+}
+
+
+.page-content .post-content section.shell.user + div.highlighter-rouge:before {
+    background-image: url(/images-layout/syntax-dollar.png);
+	background-color: #f4f4f4;
+	background-size: 1.5em;
+}
+.page-content .post-content section.shell.root + div.highlighter-rouge:before {
+    background-image: url(/images-layout/syntax-hash.png);
+	background-color: #f4f4f4;
+	background-size: 1.5em;
+}
+
+.page-content .post-content section.shell.user.output + div.highlighter-rouge:before {
+    background: url(/images-layout/syntax-dollar-bg.png) no-repeat, url(/images-layout/syntax-quote.png) #f4f4f4 repeat-y;
+	background-size: 1.5em;
+}
+.page-content .post-content section.shell.root.output + div.highlighter-rouge:before {
+    background: url(/images-layout/syntax-hash-bg.png) no-repeat, url(/images-layout/syntax-quote.png) #f4f4f4 repeat-y;
+	background-size: 1.5em;
+}
+
+.page-content .post-content section.shell.user.input + div.highlighter-rouge:before {
+    background: url(/images-layout/syntax-dollar-bg.png) no-repeat, url(/images-layout/syntax-plus.png) #f4f4f4 repeat-y;
+	background-size: 1.5em;
+}
+.page-content .post-content section.shell.root.input + div.highlighter-rouge:before {
+    background: url(/images-layout/syntax-hash-bg.png) no-repeat, url(/images-layout/syntax-plus.png) #f4f4f4 repeat-y;
+	background-size: 1.5em;
+}
+
+.page-content .post-content section.shell.user.replace + div.highlighter-rouge:before {
+    background: url(/images-layout/syntax-dollar-bg.png) no-repeat, url(/images-layout/syntax-minus.png) no-repeat, url(/images-layout/syntax-plus.png) no-repeat;
+    background-size: 1.5em;
+	background-color: #f4f4f4;
+    background-position-y: top, 1.5em, 3em;
+}
+.page-content .post-content section.shell.root.replace + div.highlighter-rouge:before {
+    background: url(/images-layout/syntax-hash-bg.png) no-repeat, url(/images-layout/syntax-minus.png) no-repeat, url(/images-layout/syntax-plus.png) no-repeat;
+    background-size: 1.5em;
+	background-color: #f4f4f4;
+    background-position-y: top, 1.5em, 3em;
+}
+
+.page-content .post-content section.shell.one + div.highlighter-rouge:before {
+    background-repeat: no-repeat;
+}
+
+.page-content .post-content section.shell.scroll + div.highlighter-rouge:before {
+    border-bottom-width: 1.55em;
+}
+
+/*
+ * tag cloudfg
  */
  
 .page-content .post-meta span {
 	display:inline-block;
 }
+
 
 

@@ -29,6 +29,8 @@ The jails will define
 
 The easiest way to install *Fail2Ban* is by using the repository.
 
+{% assign shell-types = "root" %}
+{% include tags/shell-ind.html %}
 ```
 apt-get update
 apt-get install fail2ban
@@ -92,14 +94,18 @@ touch /etc/fail2ban/jail.local
 
  - For some programs, additional configuration will be required, to log failed login attempts and other illegal operations. Here, that'll be *mysqld-auth*:
 
+{% assign shell-types = "root input" %}
+{% include tags/shell-ind.html %}
 ```
 vim /etc/my.cnf
-+ log-error=/var/log/mysqld.log
-+ log-warning = 2
+log-error=/var/log/mysqld.log
+log-warning = 2
 ```
 
  - But let's first activate the mail notification feature. The default action shall be a ban and mail notification with whois-information and the log lines being detected.
 
+{% assign shell-types = "root input" %}
+{% include tags/shell-ind.html %}
 ```
 vim /etc/fail2ban/jail.local
 
@@ -115,6 +121,8 @@ action        = %(action_mwl)s
 
  - Now activate the apache filters above. This shell command iterates over a list of filters (*apache\**) and inserts them as jail with same settings to the *additional* configuration. Feel free to change the list of filters and the apache logpath provided.
 
+{% assign shell-types = "root one" %}
+{% include tags/shell-ind.html %}
 ```
 for filter in apache apache-noscript apache-overflows apache-badbots apache-nohome; do printf "\
 \
@@ -187,6 +195,8 @@ Don't forget configuring the firewall for required open ports.
 
 To take back an already performed ban, the following type of command should be executed with *elevated privileges*:
  
+{% assign shell-types = "root" %}
+{% include tags/shell-ind.html %}
 ``` 
 fail2ban-client get [FILTER] actionunban [IP]
 fail2ban-client get apache-owncloud actionunban 123.145.167.189
@@ -194,6 +204,7 @@ fail2ban-client get apache-owncloud actionunban 123.145.167.189
 
 To stop additional bans while working on a problem, stopping the service is advised:
  
+{% include tags/shell-ind.html %}
 ```
 service fail2ban stop
 ```

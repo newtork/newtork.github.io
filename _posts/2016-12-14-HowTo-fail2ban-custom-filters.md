@@ -21,6 +21,9 @@ The first time I encountered [Fail2Ban][f2b], and found it to be a useful tool, 
 
 Add the following lines to the additional *Fail2Ban* configuration. It contains a week long ban time to quarantine the client machine.
 
+
+{% assign shell-types = "root input" %}
+{% include tags/shell-ind.html %}
 ```
 vim /etc/fail2ban/jail.local
 
@@ -35,7 +38,10 @@ bantime  = 604800
 
 
 Next, add the malware definition as *new* filter, create a file:
- 
+
+
+{% assign shell-types = "root input" %}
+{% include tags/shell-ind.html %}
 ```
 vim /etc/fail2ban/filter.d/apache-locky.conf
 
@@ -54,6 +60,8 @@ Any uploads of files ending with *\*.locky* or the *...instructions.txt* will be
 
 Every minute a web server will be spammed with useless requests to test for server misconfigurations, e.g. proxy request. To block these malicious requests, I wrote a filter to block any abnormal request, not corresponding with a default request. **Note:** this is experimental.
 
+{% assign shell-types = "root input" %}
+{% include tags/shell-ind.html %}
 ```
 vim /etc/fail2ban/jail.local
 
@@ -68,6 +76,8 @@ bantime  = 604800
 
 As the example before, a new filter file needs to be created.
 
+{% assign shell-types = "root input" %}
+{% include tags/shell-ind.html %}
 ```
 vim /etc/fail2ban/filter.d/apache-proxy.conf
 

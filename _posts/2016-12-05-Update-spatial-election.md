@@ -53,6 +53,8 @@ The easiest way to run the software, is to run an up-to-date *Java* and my Docke
 
  - Check your current Java Runtime Environment, it should be at least version *1.8*.
 
+{% assign shell-types = "user one" %}
+{% include tags/shell-ind.html %}
 ```
 java -version
 
@@ -71,6 +73,8 @@ The database adapter expects a connectable PostgreSQL database *spatial_election
 
  - **(a)** Check your current PostgreSQL installation, it should be at least version *9.6*. Make sure PostGIS is installed as well.
 
+{% assign shell-types = "user" %}
+{% include tags/shell-ind.html %}
 ```
 psql --version
 dpkg -l | grep postgis
@@ -86,6 +90,7 @@ dpkg -l | grep postgis
  - **(a)** Install and run *Tomcat*. Upload and deploy the **WAR** file provided. If the startup fails, check the [Java Version which the Tomcat Server runs on][metatomcat].
  - **(b)** Simply run the executable **JAR** file. *Note:* the port number might change.
 
+{% include tags/shell-ind.html %}
 ```
 java -jar server##2.0-20161203.jar
 ```

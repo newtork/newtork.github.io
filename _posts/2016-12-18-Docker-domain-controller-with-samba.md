@@ -55,6 +55,9 @@ To run this docker you will need to
 
 To check *ACL* / *xattr* support on your local partition (e.g. `sda1` with `ext4`), use the following command:
 
+
+{% assign shell-types = "user output" %}
+{% include tags/shell-ind.html %}
 ```
 grep 'xattr\|acl' /proc/fs/ext4/sda1/options
 user_xattr
