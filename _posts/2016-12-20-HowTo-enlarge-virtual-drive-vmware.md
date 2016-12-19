@@ -1,6 +1,6 @@
 ---
 title:  "HowTo: Enlarge a Virtual Drive on VMware vSphere"
-date:   2016-12-19 07:00:00 +0000
+date:   2016-12-20 07:00:00 +0000
 modified: 2016-12-20 07:00:00 +0000 
 comments: true
 permalink: /weblog/2016/12/20/howto-enlarge-virtual-drive-vmware/
