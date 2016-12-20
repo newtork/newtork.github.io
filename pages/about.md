@@ -14,6 +14,7 @@ A couple of months ago I started working with Docker. I found it to be a great o
 
  - [isdriven](/tag/isdriven/)
  - [spatial.election](/tag/spatial-election/)
+ - [sketch-recognition](/tag/subsequence/)
 
 ### Howtos
 
