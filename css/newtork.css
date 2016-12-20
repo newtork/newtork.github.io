@@ -128,7 +128,9 @@ body {
 .page-content .post-content ul + div.gist,
 .page-content .post-content ol + div.gist,
 .page-content .post-content ul + noscript ~ div.gist,
-.page-content .post-content ol + noscript ~ div.gist {
+.page-content .post-content ol + noscript ~ div.gist,
+.page-content .post-content ul + script ~ div.gist,
+.page-content .post-content ol + script ~ div.gist {
 	margin-left:2em;
 }
 
