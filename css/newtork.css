@@ -266,6 +266,7 @@ body {
 	position:relative;	
 }
 .page-content .post-content ol > li {
+	margin-bottom: 1em;
 }
 .page-content .post-content ol > li:before {
     counter-increment: listcount;
