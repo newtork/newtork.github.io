@@ -24,7 +24,7 @@ First of all, feel free to look into the [demo][demo].
 Requirement:
 
  - *A figure can be freely drawn in a different size and varying rotation.*
- - *For every additional point being drawn, use* `O(c)` *space/time, where* `c=const`
+ - *For every additional point being drawn, use `O(c)` space/time, where `c=const` *
 
 
 ## About the solution
@@ -49,8 +49,11 @@ So instead of operating on coordinates, I decided to calculate the *angular velo
  - thus more accessible to *classic* sequence algorithms
 
 On the side of disadvantages there are:
+
  - unable to retrieve the original image with correct rotation and scale
  - most characters are appearing very similar when obsevering the *angular velocity*, e.g. `6`, `0`, `c` and `o`.
+
+Illustration:
 
 ![descr][angular]
 
@@ -63,9 +66,18 @@ I recorded the single numbers, some words and a figure with various success rate
 
 Look out for some upcoming posts.
 
+
+More screenshots...
+
+--- 
+
 ![one][image1]
 
+--- 
+
 ![two][image2]
+
+--- 
 
 ![four][image4]
 
