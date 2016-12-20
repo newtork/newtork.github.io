@@ -53,8 +53,8 @@ So instead of operating on coordinates, I decided to calculate the *angular velo
 On the side of disadvantages we have:
 
  - unable to retrieve the original image with correct rotation and scale
- - most characters are appearing very similar when obsevering the *angular velocity*, e.g. `6`, `0`, `c` and `o`.
- - every person draws differently, this could yield individual issues.
+ - some characters appear very similar when obsevering the *angular velocity*, e.g. `6`, `0`, `c`, `o`.
+ - every person draws differently, this could yield individual issues
 
 Illustration:
 
