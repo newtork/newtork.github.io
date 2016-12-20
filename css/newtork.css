@@ -46,7 +46,7 @@ body {
 }
 
 
-.page-content .post-content li {
+.page-content .post-content li:last-child {
 	margin-bottom:1em;
 }
 
@@ -54,9 +54,15 @@ body {
     margin-top: 0.8em;
 }
 
+.page-content .post-content li > ol,
 .page-content .post-content li > ul {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
+}
+
+.page-content .post-content ol + p,
+.page-content .post-content ul + p {
+    margin-top:2em;
 }
 
 /*
