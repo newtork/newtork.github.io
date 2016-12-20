@@ -21,15 +21,17 @@ First of all, feel free to look into the [demo][demo].
 
 *Create an interactive website to arbitrarily draw lines and curves. An algorithm shall recognize predefined forms and shapes while they are being drawn. It should give assumptions on known figures and words while they are being written.*
 
-Requirement:
+Requirements:
 
  - *A figure can be freely drawn in a different size and varying rotation.*
- - *For every additional point being drawn, use `O(c)` space/time, where `c=const` *
+ - *For every additional point being drawn, use* `O(c)` *space/time, where* `c=const`
 
 
 ## About the solution
 
 I'm not able give you a finished solution yet. This might happen during the upcoming weeks and months. There are some extensive routines to implement, even with my previous project in mind.
+
+Currently the websites features only the required *JavaScript* and *CSS* resources to max out any performance regulations. This project will **not** be done with any *JQuery* library or alike.
 
 
 ### Tackle the requirements
@@ -48,10 +50,11 @@ So instead of operating on coordinates, I decided to calculate the *angular velo
  - numerical reduction of input data dimensions, from `2` to `1`
  - thus more accessible to *classic* sequence algorithms
 
-On the side of disadvantages there are:
+On the side of disadvantages we have:
 
  - unable to retrieve the original image with correct rotation and scale
  - most characters are appearing very similar when obsevering the *angular velocity*, e.g. `6`, `0`, `c` and `o`.
+ - every person draws differently, this could yield individual issues.
 
 Illustration:
 
@@ -64,7 +67,7 @@ As of today, the [demo][demo] shows matching sequences by using an *online* [DTW
 
 I recorded the single numbers, some words and a figure with various success rates. Since the algorithm is not trained or configured by any means, it will often give false-positives. But even in its primitive state it works surprisingly well on some of the characters. There will be much greater achievements, once additional features have been implemented: *thresholds, conditionings, graduations and associations*.
 
-Look out for some upcoming posts.
+Look out for some upcoming posts!
 
 
 More screenshots...
@@ -80,6 +83,9 @@ More screenshots...
 --- 
 
 ![four][image4]
+
+--- 
+
 
 [sketch]: https://github.com/newtork/sketch-recognition
 [demo]: http://newtork.de/sketch-recognition/01-userinput-canvas/canvas.html
