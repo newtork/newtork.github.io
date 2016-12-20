@@ -20,8 +20,8 @@ tags: howto fail2ban apache security
 
 First check the configuration of *Fail2Ban*. Let's assume, you have the default *action* with `action_mwl` enabled.  
 
-{% assign shell-types = "root output" %}
-{% include tags/shell-ind.html %}
+
+{% include tags/shell-ind.html types="root output" %}
 ```
 grep 'action = %(action_' /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 /etc/fail2ban/jail.conf:action = %(action_)s
@@ -45,8 +45,8 @@ The changes are straight forward:
  - Lines containing the IP (*default*)
 
  
-{% assign shell-types = "root input" %}
-{% include tags/shell-ind.html %}
+ 
+{% include tags/shell-ind.html types="root input" %}
 ```
 vim /etc/fail2ban/action.d/mail-whois-lines.conf
  

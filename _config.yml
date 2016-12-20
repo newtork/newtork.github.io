@@ -16,6 +16,7 @@ gems:
   - jekyll-gist
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-gist
 #  - jekyll-seo-tag
 #  - jekyll-feed
 #  - jekyll-paginate
@@ -24,6 +25,8 @@ gems:
 # Build settings
 markdown: kramdown
 
+gist:
+  noscript: true
 
 defaults:
   -

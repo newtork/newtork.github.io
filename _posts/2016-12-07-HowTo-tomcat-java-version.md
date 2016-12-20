@@ -18,8 +18,8 @@ For a recently upgraded Java project ([spatial election][spatial.election]) I ne
 
 1. First of all, let's check the currently installed version of Java in the execution path.
 
-{% assign shell-types = "user" %}
-{% include tags/shell-ind.html %}
+
+{% include tags/shell-ind.html types="user" %}
 ```
 java -version
 javac -version
@@ -27,8 +27,7 @@ javac -version
 
 1. If it is not giving the desired version, check the available binaries.
 
-{% assign shell-types = "user" %}
-{% include tags/shell-ind.html %}
+{% include tags/shell-ind.html types="user" %}
 ```
 ls -dl /usr/lib/jvm/java-*
 ```
@@ -36,8 +35,8 @@ ls -dl /usr/lib/jvm/java-*
 1. If this is not listing the desired version to run, a manual download and installation of the required binary is needed, e.g. Oracle Java 8 for Debian/Ubuntu.
 
 
-{% assign shell-types = "root scroll" %}
-{% include tags/shell-ind.html %}
+
+{% include tags/shell-ind.html types="root scroll" %}
 ```
 echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" > /etc/apt/sources.list.d/java-8-debian.list
 echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list.d/java-8-debian.list
@@ -58,8 +57,8 @@ Usually the repository packages hosted on the [Canonical launchpad platform][lau
 
 1. If the displayed version does not suffice, the following changes are needed in `/etc/default/tomcat7` to set a different binary path.
 
-{% assign shell-types = "root replace" %}
-{% include tags/shell-ind.html %}
+
+{% include tags/shell-ind.html types="root replace" %}
 ```
 vim /etc/default/tomcat7
 #JAVA_HOME=/usr/lib/jvm/openjdk-6-jdk
@@ -68,8 +67,8 @@ JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
 1. Restart the Tomcat server
 
-{% assign shell-types = "root" %}
-{% include tags/shell-ind.html %}
+
+{% include tags/shell-ind.html types="root" %}
 ```
 service tomcat7 restart
 ```

@@ -34,8 +34,7 @@ The last time I touched the project, was to compose a [Wiki documentation][wiki]
 
 1\. Download and install dependencies.
 
-{% assign shell-types = "root" %}
-{% include tags/shell-ind.html %}
+{% include tags/shell-ind.html types="root" %}
 ```
 apt-get update
 apt-get install postgis
@@ -44,8 +43,7 @@ apt-get install postgis
 2\. Create database "spatial_election" with extensions "postgis" and "postgis_topology".
 
 
-{% assign shell-types = "root scroll" %}
-{% include tags/shell-ind.html %}
+{% include tags/shell-ind.html types="root scroll" %}
 ```
 createdb spatial_election --username=postgres --encoding=UNICODE
 psql spatial_election -U postgres -c "CREATE EXTENSION postgis; CREATE EXTENSION postgis_topology;"
@@ -53,8 +51,7 @@ psql spatial_election -U postgres -c "CREATE EXTENSION postgis; CREATE EXTENSION
 
 3\. Set password for postgres.
 
-{% assign shell-types = "root one" %}
-{% include tags/shell-ind.html %}
+{% include tags/shell-ind.html types="root one" %}
 ```
 psql -U postgres -c "\password"
 Enter new password: postgres
@@ -63,8 +60,8 @@ Enter it again: postgres
 
 4\. Allow login via password, *md5* instead of *peer*.
 
-{% assign shell-types = "root scroll" %}
-{% include tags/shell-ind.html %}
+
+{% include tags/shell-ind.html types="root scroll" %}
 ```
 sed -i 's/^local\s*all\s*postgres\s*peer/local\tall\tpostgres\tmd5/' /etc/postgresql/9.*/main/pg_hba.conf
 service postgresql restart
@@ -72,8 +69,8 @@ service postgresql restart
 
 5\. Restore database from the dump file, here *spatial_db.backup*.
 
-{% assign shell-types = "root one" %}
-{% include tags/shell-ind.html %}
+
+{% include tags/shell-ind.html types="root one" %}
 ```
 pg_restore -U postgres -d spatial_election spatial_db.backup
 Password: postgres

@@ -99,12 +99,12 @@ body {
  * special table definition
  */
 
-.page-content .post-content table {
+.page-content .post-content > table {
 	margin: 2em 0px;
     border: 1px solid #ccc;
     font-size: 0.8em;
 }
-.page-content .post-content table th {
+.page-content .post-content > table th {
     border-bottom: 1px solid #ccc;
 }
 
@@ -124,7 +124,11 @@ body {
 .page-content .post-content ul + div.highlighter-rouge,
 .page-content .post-content ul + section.shell + div.highlighter-rouge,
 .page-content .post-content ol + div.highlighter-rouge,
-.page-content .post-content ol + section.shell + div.highlighter-rouge {
+.page-content .post-content ol + section.shell + div.highlighter-rouge,
+.page-content .post-content ul + div.gist,
+.page-content .post-content ol + div.gist,
+.page-content .post-content ul + noscript ~ div.gist,
+.page-content .post-content ol + noscript ~ div.gist {
 	margin-left:2em;
 }
 
@@ -264,3 +268,22 @@ body {
     width: 2em;
 }
 
+/*
+ * gist code
+ */
+
+.page-content .post-content .gist > .gist-file .gist-meta:last-of-type {
+	color:transparent;
+    opacity: 0.2;
+}
+.page-content .post-content .gist:hover > .gist-file .gist-meta:last-of-type {
+	opacity: 1;
+}
+.page-content .post-content .gist > .gist-file .gist-meta:last-of-type > * {
+	display:none;
+}
+.page-content .post-content .gist > .gist-file .gist-meta:last-of-type > a:first-of-type,
+.page-content .post-content .gist > .gist-file .gist-meta:last-of-type > a:nth-of-type(2) {
+	display:inline;
+    font-weight: normal;
+}
