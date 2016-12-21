@@ -8,7 +8,7 @@ categories: project
 tags: javascript css html project demo dtw subsequence
 ---
 
-Two years ago I worked on a subsequence matching algorithm, to solve a difficult monitoring problem with tight algorithmic time and space complexity requirements. I went back to restart documenting this case. Now, instead of publishing my old results, I decided to make up a new challenge, to test and improve my findings. I created this task around a little web project, in order to show and use it as an interactive example: [Sketch Recognition][sketch].
+Two years ago I worked on a subsequence matching algorithm, to solve a difficult data monitoring problem with tight algorithmic time and space complexity requirements. I went back to restart documenting this case. Now, instead of publishing my old results, I decided to make up a new challenge, to test and improve my findings. I created this task around a little web project, in order to show and use it as an interactive example: [Sketch Recognition][sketch].
 
 <!--more-->
 

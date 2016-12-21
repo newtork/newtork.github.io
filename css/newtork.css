@@ -38,6 +38,10 @@ body {
  * additional margin to improve readability
  */
  
+.page-content .post-content p > img {
+    box-shadow: 0 0 20px 0px;
+}
+
 .page-content .post-content h2,
 .page-content .post-content h3,
 .page-content .post-content h4,
