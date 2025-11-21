@@ -1,9 +1,9 @@
 ---
 title:  "HowTo: From Spring's TaskDecorator to Supplier"
-date:   2025-11-21 08:00:00 +0000
-modified: 2025-11-21 08:00:00 +0000 
+date:   2025-11-20 08:00:00 +0000
+modified: 2025-11-20 08:00:00 +0000 
 comments: true
-permalink: /weblog/2025/11/21/runnable-callable/
+permalink: /weblog/2025/11/20/runnable-supplier/
 categories: blog
 tags: blog howto java
 ---
